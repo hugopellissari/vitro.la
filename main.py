@@ -137,5 +137,4 @@ def delete():
 
 
 if __name__ == '__main__':
-    app.run(host="192.168.0.170",debug=True)
-    app.run(threaded=True)
+    app.run()
