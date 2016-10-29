@@ -1,0 +1,107 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    font-family:"Segoue";
+    line-height:1.6em;
+    color:#666;
+    font-size:14px;
+}
+
+a{
+    color:#333;
+    text-decorations:none;
+}
+
+#container{
+    width:740px;
+    background:#fff;
+    margin:auto;
+}
+
+#results li{
+	padding:10px 0;
+	border-bottom:1px #ccc dotted;
+	list-style:none;
+	overflow:auto;
+}
+
+#results li p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.list-left{
+	float:left;
+	width:20%;
+}
+
+.list-left img{
+	width:100%;
+	padding:3px;
+	border:solid #ccc 1px:
+}
+
+.list-right{
+	float:right;
+	width:78%;
+}
+
+.material-icons{
+    cursor:default;
+}
+
+#playlist li p,i {
+    display: inline;
+    max-width: 40%
+    white-space: nowrap;
+    overflow:hidden;
+}
+#playlist li{
+    overflow: hidden;
+}
+
+#songTitle{
+    max-width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#search-btn{
+    background: transparent;
+    border: none !important;
+    font-size:0;
+}
+
+
+#clear {
+    float: right;
+
+}
+
+#playPlaylist{
+    float: left;
+}
+
+#songDuration{
+    float: right;
+    width: 10%
+}
+
+
+.moveSong{
+    float: right;
+}
+
+#playbackControl{
+  width: 100%;
+  text-align: center;
+}
+
+#playback-wrapper{
+  display: inline-block;
+}

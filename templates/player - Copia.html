@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="static/style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="static/script.js"></script>
+    </head>
+	<body>
+
+        <h1>Juke Name</h1>
+         <h2 id="jukename" name="jukename">{{ jukename }}</h2>
+		
+
+
+        <div id="player"></div>
+
+		<script>
+		// 2. This code loads the IFrame Player API code asynchronously.
+		var tag = document.createElement('script');
+
+		tag.src = "https://www.youtube.com/iframe_api";
+		var firstScriptTag = document.getElementsByTagName('script')[0];
+		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+		// 3. This function creates an <iframe> (and YouTube player)
+		//    after the API code downloads.
+		var player;
+		function onYouTubeIframeAPIReady() {
+			player = new YT.Player('player', {
+			height: '390',
+			width: '640',
+			videoId: 'M7lc1UVf-VE',
+			events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+			}
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+			event.target.playVideo();
+		}
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>
+
+
+    <div id="playbackControl" class="playbackControl">
+        <i id="skipPrevious" class = "material-icons">skip_previous</i>
+        <i id="play" class = "material-icons">play_arrow</i>
+        <i id="pause" class = "material-icons">pause</i>
+        <i id="skipNext" class = "material-icons">skip_next</i>
+    </div>
+
+    <div id="containerPlaylist">
+        <h1>Playlist</h1>
+        <ul id="playlist"></ul>
+
+
+	<div id="container">
+
+        <h1>Search</h1>
+
+        <section>
+            <form id="search-form" name="search-form" onsubmit="return search()" method="POST">
+                <div class="fieldcontainer">
+                    <input type="search" id="query" class="searchfield">
+                    <input type="submit" name="search-btn" id="search-btn" value="">
+                </div>
+            </form>
+
+            <ul id="results"></ul>
+            <ul id="buttons"></ul>
+        </section>
+    </div>
+
+
+  </body>
+</html>

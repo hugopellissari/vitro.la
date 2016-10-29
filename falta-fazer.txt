@@ -1,0 +1,13 @@
+BACKEND
+
+
+-sincronizar o cursor do player com o do remote
+
+
+-escape characters
+
+
+
+FRONTEND
+-fazer pagina inicial
+-fazer pagina do remote
