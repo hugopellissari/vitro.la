@@ -5,7 +5,7 @@ import collections
 
 app = Flask(__name__)
 
-# Cria uma nova tabela com os códigos dos vídeos
+
 def create_juketable(tablename):
     con = sql.connect("jukebox.db")
     cur = con.cursor()
