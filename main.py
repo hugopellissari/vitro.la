@@ -9,7 +9,7 @@ app = Flask(__name__)
 def create_juketable(tablename):
     con = sql.connect("jukebox.db")
     cur = con.cursor()
-    cur.execute("CREATE TABLE if not exists %s (id integer primary key autoincrement, videoid text not null, title text not null, duration text not null, pos integer not null)" % tablename)
+    cur.execute("CREATE TABLE if not exists ? (id integer primary key autoincrement, videoid text not null, title text not null, duration text not null, pos integer not null)", tablename)
     con.commit()
     con.close()
 
