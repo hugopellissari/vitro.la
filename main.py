@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 dbPath="jukebox.db"
 
-#cria db, se tabela já existe, retorna False
+
 def create_juketable(tablename):
     con = sql.connect(dbPath)
     cur = con.cursor()
