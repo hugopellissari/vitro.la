@@ -3,6 +3,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="static/style.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -26,17 +27,19 @@
                 <h1 style="text-align: center;">Create a jukebox</h1>
                 <p style="text-align: center;"> Transform your device in a jukebox. Create a playlist and let your friends connect to it. They can add songs from their mobile </p>
 		        <form action="juke" method="POST">
-                    <input type="text" name="jukeName">
+                    <input type="text" name="jukeName" class="input-lg">
 		            <input type="submit" value="Submit">
+		            <p>{{ tableExists }}</p>
                 </form>
             </div>
 
             <div class="col-sm-6">
             	<h1 style="text-align: center;">Connect yourself to a jukebox</h1>
             	<p style="text-align: center;"> Want to add songs to a jukebox? Just type the juke's name and connect to it from your device</p>
-		        <form>
-                    <input type="text" name="jukeName">
+		        <form action="jukeConnect" method="POST">
+                    <input type="text" name="jukeName" class="input-lg">
 		            <input type="submit" value="Submit">
+		            <p>{{ tableNotExist }}</p>
                 </form>
             </div>
         </div>

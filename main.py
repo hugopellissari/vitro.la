@@ -5,17 +5,22 @@ import collections
 
 app = Flask(__name__)
 
+dbPath="jukebox.db"
 
+#cria db, se tabela já existe, retorna False
 def create_juketable(tablename):
-    con = sql.connect("jukebox.db")
+    con = sql.connect(dbPath)
     cur = con.cursor()
-    cur.execute("CREATE TABLE if not exists %s (id integer primary key autoincrement, videoid text not null, title text not null, duration text not null, pos integer not null)" % tablename)
-    con.commit()
+    try:
+        cur.execute("CREATE TABLE %s (id integer primary key autoincrement, videoid text not null, title text not null, duration text not null, pos integer not null)" % tablename)
+        con.commit()
+    except:
+        return False
     con.close()
 
 
 def add_video(tablename, videoURL, videoTitle, videoDuration, vlocation, vcursor):
-    con = sql.connect("jukebox.db")
+    con = sql.connect(dbPath)
     cur = con.cursor()
     location = int(vlocation)
     cursor = int(vcursor)
@@ -31,7 +36,7 @@ def add_video(tablename, videoURL, videoTitle, videoDuration, vlocation, vcursor
 
 #Recupera playlist da database, transforma em JSON
 def get_playlist(tablename):
-    con = sql.connect("jukebox.db")
+    con = sql.connect(dbPath)
     cur = con.cursor()
     cur.execute("SELECT * FROM %s ORDER BY pos" % tablename)
     rows = cur.fetchall()
@@ -53,7 +58,7 @@ def get_playlist(tablename):
 
 #Reordena playlist, parametro "direction" indica se vai para cima ou para baixo sendo 0=desce 1=sobe
 def reorder_playlist(tablename, id, dir):
-    con = sql.connect("jukebox.db")
+    con = sql.connect(dbPath)
     cur = con.cursor()
     cur.execute("SELECT pos FROM {0} WHERE id={1}".format(tablename,int(id)))
     position = int(cur.fetchone()[0])
@@ -76,7 +81,7 @@ def reorder_playlist(tablename, id, dir):
     con.close()
 
 def clear(tablename, id):
-    con = sql.connect("jukebox.db")
+    con = sql.connect(dbPath)
     cur = con.cursor()
 
     cur.execute("SELECT pos FROM {0} WHERE id={1}".format(tablename,int(id)))
@@ -98,9 +103,18 @@ def index():
 @app.route('/juke', methods=['POST'])
 def juke():
     jukename = request.form["jukeName"]
-    create_juketable(jukename)
-    return render_template("player.html", jukename=jukename)
+    if(create_juketable(jukename)==False):
+        return render_template("index.html", tableExists="This name is already taken")
+    else:
+        return render_template("player.html", jukename=jukename)
 
+@app.route('/jukeConnect', methods=['POST'])
+def jukeConnect():
+    jukename = request.form["jukeName"]
+    if(create_juketable(jukename)!=False):
+        return render_template("index.html", tableNotExist="We couldn't find this jukebox")
+    else:
+        return render_template("remote.html", jukename=jukename)
 
 @app.route('/add', methods=['POST'])
 def add():

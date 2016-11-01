@@ -105,3 +105,11 @@ a{
 #playback-wrapper{
   display: inline-block;
 }
+
+.ui-menu-item{
+    font-size:14px;
+}
+
+.ui-menu-item .ui-menu-item-wrapper{
+    height:30px;
+}

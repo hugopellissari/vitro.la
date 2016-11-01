@@ -19,16 +19,13 @@
             <div class="container-fluid">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#">Jukebox</a>
+                    <h4 id="jukename" name="jukename">{{ jukename }}</h4>
                 </div>
              </div>
         </nav>
 
 
-        <h1>Jukebox:</h1>
-        <h2 id="jukename" name="jukename">{{ jukename }}</h2>
-
-
-        <div class="col-lg-12  padding-zero container-fluid">
+        <div class="col-lg-12  container-fluid">
             <div id="videocontainer" class="embed-responsive embed-responsive-16by9">
                 <div id="playerContainer" class="playerContainer"></div>
             </div>
@@ -46,7 +43,20 @@
 
 
         <div id="containerPlaylist" class = "panel panel-default">
-            <div class="panel-heading">Playlist</div>
+            <div class="panel-heading">Playlist
+                 <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-primary active">
+                    <input type="radio" name="options" id="repeatPlayMode" autocomplete="off" checked> Repeat Playlist
+                    </label>
+                    <label class="btn btn-primary">
+                    <input type="radio" name="options" id="stopPlayMode" autocomplete="off"> Stop playing
+                    </label>
+                    <label class="btn btn-primary">
+                    <input type="radio" name="options" id="automaticPlayMode" autocomplete="off"> Automaticly add songs
+                    </label>
+                </div>
+
+            </div>
             <ul id="playlist" class="list-group"></ul>
         </div>
 
@@ -54,7 +64,7 @@
             <div class="panel-heading"> Search
             <form id="search-form" name="search-form" onsubmit="return search()" method="POST">
                 <div class="fieldcontainer">
-                    <input type="search" id="query" class="searchfield">
+                    <input type="search" id="query" class="input-lg">
                     <input type="submit" name="search-btn" id="search-btn" placeholder="Search...">
                 </div>
             </form>

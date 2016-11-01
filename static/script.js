@@ -52,7 +52,6 @@ function onPlayerStateChange(event){
 
     if(event.data == YT.PlayerState.ENDED && $('#containerPlaylist ul li').length == 0){
         flag = 0;
-        console.log("entred flag:"+flag)
     }
 }
 
@@ -82,8 +81,8 @@ function skipVideo(dir){
 
 function search() {
     $('#results').html('');
-
     q = $('#query').val();
+    $('#search-form')[0].reset();
 
     $.get(
         "https://www.googleapis.com/youtube/v3/search", {
@@ -94,6 +93,7 @@ function search() {
             key: 'AIzaSyAyCS7wxWvJB3sG5Qmd2MOpB9J50v-NLaY'
         },
         function(data) {
+
             for (var i = 0; i < data.items.length; i++) {
                 $.get(
                     "https://www.googleapis.com/youtube/v3/videos", {
@@ -106,13 +106,38 @@ function search() {
                             item = video.items[0];
                             var output = getOutput(video.items[0]);
                             $('#results').append(output);
-
                         }
                     });
             }
 
         });
 
+}
+
+function searchRelatedVideos(videoId){
+    $.get(
+        "https://www.googleapis.com/youtube/v3/search", {
+            part: 'snippet, id',
+            relatedToVideoId: videoId,
+            maxResults: 1,
+            type: 'video',
+            key: 'AIzaSyAyCS7wxWvJB3sG5Qmd2MOpB9J50v-NLaY'
+        },
+        function(data) {
+                $.get(
+                    "https://www.googleapis.com/youtube/v3/videos", {
+                        part: 'snippet, contentDetails',
+                        key: "AIzaSyAyCS7wxWvJB3sG5Qmd2MOpB9J50v-NLaY",
+                        id: data.items[0].id.videoId
+                    },
+                    function(video) {
+                        if (video.items.length > 0) {
+                            return video.items[0];
+                         }
+                    });
+
+
+        });
 }
 
 function convertTime(duration) {
@@ -213,11 +238,10 @@ function getOutput(item){
 
     var output = '<li class = "search-list">' +
                 '<div class="list-left">' + 
-                '<img src="'+thumb+'">' +
+         //       '<img src="'+thumb+'">' +
                 '</div>' +
 				'<div class ="list-right">' + 
 				'<h3>'+title+'</h3>' +
-				'<p>'+description+'</p>' +
                 '<p>'+duration+'</p>' +
                 '<div id="buttonsResult" class="buttonsContainer">' +
                 '<button class="addNext" type="button" video-id= '+ videoId +' video-title= '+'"'+title+'"'+' video-duration= '+duration+' >Add as next</button>' +
@@ -332,6 +356,11 @@ $(document).ready(function(){
                 suggestions.length = 5; // prune suggestions list to only 5 items
                 response(suggestions);
             };
+        },
+        select: function (e, ui) {
+            $("#query").val(ui.item.value);
+            $("#search-form").submit();
+            e.preventDefault();
         }
     });
 
