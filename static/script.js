@@ -1,5 +1,6 @@
 var cursor;
 var flag=0;
+var flagAutoAdded=1; //quando video para e musica auto é adicionada, flag==1. Volta a zero quando video muda de estado para ENDED
 var automaticMode=1;
 var suggestCallBack;
 
@@ -48,6 +49,7 @@ function onPlayerStateChange(event){
     if(event.data == YT.PlayerState.ENDED){
         skipVideo(1);
         getPlaylist();
+        flagAutoAdded=0;
     }
 
     if(event.data == YT.PlayerState.ENDED && $('#containerPlaylist ul li').length == 0){
@@ -265,18 +267,17 @@ function getOutput(item){
 
 function update(){
     var playSize = $('#containerPlaylist ul li').length;
-    console.log("cursor:"+(cursor+1));
-    console.log("playsize:"+playSize);
     if(playSize==1 && flag==0){
         getPlaylistPlayer(function(results){
             player.loadVideoById(results[0].videoid);
             flag=1;
         });
     }
-//adicionando duplamente por causa do update time, dar um fix nisso
+        console.log(flagAutoAdded);
     if(player.getPlayerState()==0 && playSize>=1){
-        if(automaticMode==1 && playSize==(cursor+1)){
-            console.log("entred");
+
+        if(automaticMode==1 && (playSize)==(cursor+1) && flagAutoAdded==0){
+            flagAutoAdded=1;
             searchRelatedVideos(player.getVideoData()['video_id']);
         }
          skipVideo(1);
