@@ -82,7 +82,7 @@ function search() {
     $('#results').html('');
     q = $('#query').val();
     $('#search-form')[0].reset();
-
+    document.activeElement.blur();
     $.get(
         "https://www.googleapis.com/youtube/v3/search", {
             part: 'snippet, id',
