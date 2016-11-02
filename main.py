@@ -5,7 +5,7 @@ import collections
 
 app = Flask(__name__)
 
-dbPath="jukebox.db"
+dbPath="C:\\Users\\K45VM-VX105H\Desktop\\jk-trying to save\\aqueous-ravine-18064\\jukebox.db"
 
 
 def create_juketable(tablename):

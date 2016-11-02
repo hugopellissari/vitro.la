@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03a57496-0155-4e29-885c-29c413ea012a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jukebox.db" afterPath="$PROJECT_DIR$/jukebox.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/player.html" afterPath="$PROJECT_DIR$/templates/player.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/remote.html" afterPath="$PROJECT_DIR$/templates/remote.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/script.js" afterPath="$PROJECT_DIR$/static/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -24,7 +23,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/jk-deploy$jk_deploy.coverage" NAME="jk-deploy Coverage Results" MODIFIED="1478031000407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/jk-deploy$jk_deploy.coverage" NAME="jk-deploy Coverage Results" MODIFIED="1478101676919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -41,21 +40,19 @@
       <file leaf-file-name="player.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/player.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.192307" vertical-offset="601" max-vertical-offset="1411">
-              <caret line="54" column="76" selection-start-line="54" selection-start-column="76" selection-end-line="54" selection-end-column="76" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="295" max-vertical-offset="1224">
+              <caret line="51" column="62" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-26.0" vertical-offset="51" max-vertical-offset="2669">
-              <caret line="262" column="32" selection-start-line="262" selection-start-column="32" selection-end-line="262" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.6784969" vertical-offset="1222" max-vertical-offset="3672">
+              <caret line="283" column="4" selection-start-line="283" selection-start-column="4" selection-end-line="283" selection-end-column="4" />
               <folding>
-                <element signature="e#60#211#0" expanded="false" />
-                <element signature="n#!!block;n#onYouTubeIframeAPIReady#0" expanded="false" />
                 <element signature="n#!!block;n#skipVideo#0" expanded="false" />
                 <element signature="n#!!block;n#search#0" expanded="false" />
                 <element signature="n#!!block;n#searchRelatedVideos#0" expanded="false" />
@@ -63,10 +60,7 @@
                 <element signature="n#!!block;n#getPlaylistPlayer#0" expanded="false" />
                 <element signature="n#!!block;n#getPlaylist#0" expanded="false" />
                 <element signature="n#!!block;n#displayPlaylist#0" expanded="false" />
-                <element signature="e#5636#5748#0" expanded="false" />
-                <element signature="e#5752#5856#0" expanded="false" />
                 <element signature="n#!!block;n#getOutput#0" expanded="false" />
-                <element signature="e#9967#10988#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -82,28 +76,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2553648" vertical-offset="0" max-vertical-offset="1479">
-              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="1479">
+              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
-                <element signature="e#581#1230#0" expanded="false" />
-                <element signature="e#1316#1771#0" expanded="false" />
-                <element signature="e#1921#2922#0" expanded="false" />
-                <element signature="e#2954#3314#0" expanded="false" />
-                <element signature="e#4496#4567#0" expanded="false" />
-                <element signature="e#4629#4825#0" expanded="false" />
-                <element signature="e#4884#5015#0" expanded="false" />
-                <marker date="1478031802365" expanded="true" signature="263:407" placeholder="CREATE TABLE..if..." />
-                <marker date="1478031802365" expanded="true" signature="725:814" placeholder="INSERT INTO ..." />
-                <marker date="1478031802365" expanded="true" signature="1030:1092" placeholder="INSERT INTO ..." />
-                <marker date="1478031802365" expanded="true" signature="1382:1411" placeholder="SELECT * FRO..missing_value..." />
-                <marker date="1478031802365" expanded="true" signature="1987:2019" placeholder="SELECT pos F..." />
-                <marker date="1478031802365" expanded="true" signature="2103:2127" placeholder="SELECT COUNT..." />
-                <marker date="1478031802365" expanded="true" signature="3021:3053" placeholder="SELECT pos F..." />
-                <marker date="1478031802365" expanded="true" signature="3138:3166" placeholder="DELETE FROM ..." />
+                <element signature="e#655#1304#0" expanded="false" />
+                <element signature="e#1390#1845#0" expanded="false" />
+                <element signature="e#1995#2996#0" expanded="false" />
+                <element signature="e#3028#3388#0" expanded="false" />
+                <element signature="e#4570#4641#0" expanded="false" />
+                <element signature="e#4703#4899#0" expanded="false" />
+                <element signature="e#4958#5089#0" expanded="false" />
+                <marker date="1478038191638" expanded="true" signature="337:481" placeholder="CREATE TABLE..missing_value..." />
+                <marker date="1478038191638" expanded="true" signature="799:888" placeholder="INSERT INTO ..." />
+                <marker date="1478038191638" expanded="true" signature="1104:1166" placeholder="INSERT INTO ..." />
+                <marker date="1478038191638" expanded="true" signature="1456:1485" placeholder="SELECT * FRO..missing_value..." />
+                <marker date="1478038191638" expanded="true" signature="2061:2093" placeholder="SELECT pos F..." />
+                <marker date="1478038191638" expanded="true" signature="2177:2201" placeholder="SELECT COUNT..." />
+                <marker date="1478038191638" expanded="true" signature="3095:3127" placeholder="SELECT pos F..." />
+                <marker date="1478038191638" expanded="true" signature="3212:3240" placeholder="DELETE FROM ..." />
               </folding>
             </state>
           </provider>
@@ -112,11 +106,9 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2692308" vertical-offset="374" max-vertical-offset="935">
+            <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="935">
               <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
-              <folding>
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -132,9 +124,9 @@
         <option value="$PROJECT_DIR$/templates/remote.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/static/style.css" />
-        <option value="$PROJECT_DIR$/static/script.js" />
-        <option value="$PROJECT_DIR$/templates/player.html" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/templates/player.html" />
+        <option value="$PROJECT_DIR$/static/script.js" />
       </list>
     </option>
   </component>
@@ -236,7 +228,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1384" height="786" extended-state="6" />
+    <frame x="-9" y="-9" width="1384" height="786" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -301,13 +293,177 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/templates/player.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="295" max-vertical-offset="1224">
+          <caret line="51" column="62" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4148">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#skipVideo#0" expanded="false" />
+            <element signature="n#!!block;n#search#0" expanded="false" />
+            <element signature="n#!!block;n#searchRelatedVideos#0" expanded="false" />
+            <element signature="n#!!block;n#convertTime#0" expanded="false" />
+            <element signature="n#!!block;n#getPlaylistPlayer#0" expanded="false" />
+            <element signature="n#!!block;n#getPlaylist#0" expanded="false" />
+            <element signature="n#!!block;n#displayPlaylist#0" expanded="false" />
+            <element signature="n#!!block;n#getOutput#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1510" max-vertical-offset="2040">
+          <caret line="109" column="19" selection-start-line="109" selection-start-column="19" selection-end-line="109" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="1479">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+            <element signature="e#655#1304#0" expanded="false" />
+            <element signature="e#1390#1845#0" expanded="false" />
+            <element signature="e#1995#2996#0" expanded="false" />
+            <element signature="e#3028#3388#0" expanded="false" />
+            <element signature="e#4570#4641#0" expanded="false" />
+            <element signature="e#4703#4899#0" expanded="false" />
+            <element signature="e#4958#5089#0" expanded="false" />
+            <marker date="1478038191638" expanded="true" signature="337:481" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1478038191638" expanded="true" signature="799:888" placeholder="INSERT INTO ..." />
+            <marker date="1478038191638" expanded="true" signature="1104:1166" placeholder="INSERT INTO ..." />
+            <marker date="1478038191638" expanded="true" signature="1456:1485" placeholder="SELECT * FRO..missing_value..." />
+            <marker date="1478038191638" expanded="true" signature="2061:2093" placeholder="SELECT pos F..." />
+            <marker date="1478038191638" expanded="true" signature="2177:2201" placeholder="SELECT COUNT..." />
+            <marker date="1478038191638" expanded="true" signature="3095:3127" placeholder="SELECT pos F..." />
+            <marker date="1478038191638" expanded="true" signature="3212:3240" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="935">
+          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/player.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="601" max-vertical-offset="1224">
+          <caret line="51" column="62" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1510" max-vertical-offset="2040">
+          <caret line="109" column="19" selection-start-line="109" selection-start-column="19" selection-end-line="109" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="1479">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+            <element signature="e#655#1304#0" expanded="false" />
+            <element signature="e#1390#1845#0" expanded="false" />
+            <element signature="e#1995#2996#0" expanded="false" />
+            <element signature="e#3028#3388#0" expanded="false" />
+            <element signature="e#4570#4641#0" expanded="false" />
+            <element signature="e#4703#4899#0" expanded="false" />
+            <element signature="e#4958#5089#0" expanded="false" />
+            <marker date="1478038191638" expanded="true" signature="337:481" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1478038191638" expanded="true" signature="799:888" placeholder="INSERT INTO ..." />
+            <marker date="1478038191638" expanded="true" signature="1104:1166" placeholder="INSERT INTO ..." />
+            <marker date="1478038191638" expanded="true" signature="1456:1485" placeholder="SELECT * FRO..missing_value..." />
+            <marker date="1478038191638" expanded="true" signature="2061:2093" placeholder="SELECT pos F..." />
+            <marker date="1478038191638" expanded="true" signature="2177:2201" placeholder="SELECT COUNT..." />
+            <marker date="1478038191638" expanded="true" signature="3095:3127" placeholder="SELECT pos F..." />
+            <marker date="1478038191638" expanded="true" signature="3212:3240" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="935">
+          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/player.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="601" max-vertical-offset="1411">
+          <caret line="54" column="76" selection-start-line="54" selection-start-column="76" selection-end-line="54" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1510" max-vertical-offset="2040">
+          <caret line="109" column="19" selection-start-line="109" selection-start-column="19" selection-end-line="109" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1479">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+            <element signature="e#655#1304#0" expanded="false" />
+            <element signature="e#1390#1845#0" expanded="false" />
+            <element signature="e#1995#2996#0" expanded="false" />
+            <element signature="e#3028#3388#0" expanded="false" />
+            <element signature="e#4570#4641#0" expanded="false" />
+            <element signature="e#4703#4899#0" expanded="false" />
+            <element signature="e#4958#5089#0" expanded="false" />
+            <marker date="1478038191638" expanded="true" signature="337:481" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1478038191638" expanded="true" signature="799:888" placeholder="INSERT INTO ..." />
+            <marker date="1478038191638" expanded="true" signature="1104:1166" placeholder="INSERT INTO ..." />
+            <marker date="1478038191638" expanded="true" signature="1456:1485" placeholder="SELECT * FRO..missing_value..." />
+            <marker date="1478038191638" expanded="true" signature="2061:2093" placeholder="SELECT pos F..." />
+            <marker date="1478038191638" expanded="true" signature="2177:2201" placeholder="SELECT COUNT..." />
+            <marker date="1478038191638" expanded="true" signature="3095:3127" placeholder="SELECT pos F..." />
+            <marker date="1478038191638" expanded="true" signature="3212:3240" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="935">
+          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/player.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1241">
           <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
           <folding />
@@ -320,21 +476,21 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
-            <element signature="e#581#1230#0" expanded="false" />
-            <element signature="e#1316#1771#0" expanded="false" />
-            <element signature="e#1921#2922#0" expanded="false" />
-            <element signature="e#2954#3314#0" expanded="false" />
-            <element signature="e#4496#4567#0" expanded="false" />
-            <element signature="e#4629#4825#0" expanded="false" />
-            <element signature="e#4884#5015#0" expanded="false" />
-            <marker date="1478031802365" expanded="true" signature="263:407" placeholder="CREATE TABLE..if..." />
-            <marker date="1478031802365" expanded="true" signature="725:814" placeholder="INSERT INTO ..." />
-            <marker date="1478031802365" expanded="true" signature="1030:1092" placeholder="INSERT INTO ..." />
-            <marker date="1478031802365" expanded="true" signature="1382:1411" placeholder="SELECT * FRO..missing_value..." />
-            <marker date="1478031802365" expanded="true" signature="1987:2019" placeholder="SELECT pos F..." />
-            <marker date="1478031802365" expanded="true" signature="2103:2127" placeholder="SELECT COUNT..." />
-            <marker date="1478031802365" expanded="true" signature="3021:3053" placeholder="SELECT pos F..." />
-            <marker date="1478031802365" expanded="true" signature="3138:3166" placeholder="DELETE FROM ..." />
+            <element signature="e#655#1304#0" expanded="false" />
+            <element signature="e#1390#1845#0" expanded="false" />
+            <element signature="e#1995#2996#0" expanded="false" />
+            <element signature="e#3028#3388#0" expanded="false" />
+            <element signature="e#4570#4641#0" expanded="false" />
+            <element signature="e#4703#4899#0" expanded="false" />
+            <element signature="e#4958#5089#0" expanded="false" />
+            <marker date="1478038191638" expanded="true" signature="337:481" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1478038191638" expanded="true" signature="799:888" placeholder="INSERT INTO ..." />
+            <marker date="1478038191638" expanded="true" signature="1104:1166" placeholder="INSERT INTO ..." />
+            <marker date="1478038191638" expanded="true" signature="1456:1485" placeholder="SELECT * FRO..missing_value..." />
+            <marker date="1478038191638" expanded="true" signature="2061:2093" placeholder="SELECT pos F..." />
+            <marker date="1478038191638" expanded="true" signature="2177:2201" placeholder="SELECT COUNT..." />
+            <marker date="1478038191638" expanded="true" signature="3095:3127" placeholder="SELECT pos F..." />
+            <marker date="1478038191638" expanded="true" signature="3212:3240" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -353,21 +509,21 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
-            <element signature="e#581#1230#0" expanded="false" />
-            <element signature="e#1316#1771#0" expanded="false" />
-            <element signature="e#1921#2922#0" expanded="false" />
-            <element signature="e#2954#3314#0" expanded="false" />
-            <element signature="e#4496#4567#0" expanded="false" />
-            <element signature="e#4629#4825#0" expanded="false" />
-            <element signature="e#4884#5015#0" expanded="false" />
-            <marker date="1478031802365" expanded="true" signature="263:407" placeholder="CREATE TABLE..if..." />
-            <marker date="1478031802365" expanded="true" signature="725:814" placeholder="INSERT INTO ..." />
-            <marker date="1478031802365" expanded="true" signature="1030:1092" placeholder="INSERT INTO ..." />
-            <marker date="1478031802365" expanded="true" signature="1382:1411" placeholder="SELECT * FRO..missing_value..." />
-            <marker date="1478031802365" expanded="true" signature="1987:2019" placeholder="SELECT pos F..." />
-            <marker date="1478031802365" expanded="true" signature="2103:2127" placeholder="SELECT COUNT..." />
-            <marker date="1478031802365" expanded="true" signature="3021:3053" placeholder="SELECT pos F..." />
-            <marker date="1478031802365" expanded="true" signature="3138:3166" placeholder="DELETE FROM ..." />
+            <element signature="e#655#1304#0" expanded="false" />
+            <element signature="e#1390#1845#0" expanded="false" />
+            <element signature="e#1995#2996#0" expanded="false" />
+            <element signature="e#3028#3388#0" expanded="false" />
+            <element signature="e#4570#4641#0" expanded="false" />
+            <element signature="e#4703#4899#0" expanded="false" />
+            <element signature="e#4958#5089#0" expanded="false" />
+            <marker date="1478038191638" expanded="true" signature="337:481" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1478038191638" expanded="true" signature="799:888" placeholder="INSERT INTO ..." />
+            <marker date="1478038191638" expanded="true" signature="1104:1166" placeholder="INSERT INTO ..." />
+            <marker date="1478038191638" expanded="true" signature="1456:1485" placeholder="SELECT * FRO..missing_value..." />
+            <marker date="1478038191638" expanded="true" signature="2061:2093" placeholder="SELECT pos F..." />
+            <marker date="1478038191638" expanded="true" signature="2177:2201" placeholder="SELECT COUNT..." />
+            <marker date="1478038191638" expanded="true" signature="3095:3127" placeholder="SELECT pos F..." />
+            <marker date="1478038191638" expanded="true" signature="3212:3240" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -386,21 +542,21 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
-            <element signature="e#581#1230#0" expanded="false" />
-            <element signature="e#1316#1771#0" expanded="false" />
-            <element signature="e#1921#2922#0" expanded="false" />
-            <element signature="e#2954#3314#0" expanded="false" />
-            <element signature="e#4496#4567#0" expanded="false" />
-            <element signature="e#4629#4825#0" expanded="false" />
-            <element signature="e#4884#5015#0" expanded="false" />
-            <marker date="1478031802365" expanded="true" signature="263:407" placeholder="CREATE TABLE..if..." />
-            <marker date="1478031802365" expanded="true" signature="725:814" placeholder="INSERT INTO ..." />
-            <marker date="1478031802365" expanded="true" signature="1030:1092" placeholder="INSERT INTO ..." />
-            <marker date="1478031802365" expanded="true" signature="1382:1411" placeholder="SELECT * FRO..missing_value..." />
-            <marker date="1478031802365" expanded="true" signature="1987:2019" placeholder="SELECT pos F..." />
-            <marker date="1478031802365" expanded="true" signature="2103:2127" placeholder="SELECT COUNT..." />
-            <marker date="1478031802365" expanded="true" signature="3021:3053" placeholder="SELECT pos F..." />
-            <marker date="1478031802365" expanded="true" signature="3138:3166" placeholder="DELETE FROM ..." />
+            <element signature="e#655#1304#0" expanded="false" />
+            <element signature="e#1390#1845#0" expanded="false" />
+            <element signature="e#1995#2996#0" expanded="false" />
+            <element signature="e#3028#3388#0" expanded="false" />
+            <element signature="e#4570#4641#0" expanded="false" />
+            <element signature="e#4703#4899#0" expanded="false" />
+            <element signature="e#4958#5089#0" expanded="false" />
+            <marker date="1478038191638" expanded="true" signature="337:481" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1478038191638" expanded="true" signature="799:888" placeholder="INSERT INTO ..." />
+            <marker date="1478038191638" expanded="true" signature="1104:1166" placeholder="INSERT INTO ..." />
+            <marker date="1478038191638" expanded="true" signature="1456:1485" placeholder="SELECT * FRO..missing_value..." />
+            <marker date="1478038191638" expanded="true" signature="2061:2093" placeholder="SELECT pos F..." />
+            <marker date="1478038191638" expanded="true" signature="2177:2201" placeholder="SELECT COUNT..." />
+            <marker date="1478038191638" expanded="true" signature="3095:3127" placeholder="SELECT pos F..." />
+            <marker date="1478038191638" expanded="true" signature="3212:3240" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -413,34 +569,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3723" max-vertical-offset="6137">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="2482">
           <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
-            <element signature="e#581#1230#0" expanded="false" />
-            <element signature="e#1316#1771#0" expanded="false" />
-            <element signature="e#1921#2922#0" expanded="false" />
-            <element signature="e#2954#3314#0" expanded="false" />
-            <element signature="e#4496#4567#0" expanded="false" />
-            <element signature="e#4629#4825#0" expanded="false" />
-            <element signature="e#4884#5015#0" expanded="false" />
-            <marker date="1478031802365" expanded="true" signature="263:407" placeholder="CREATE TABLE..if..." />
-            <marker date="1478031802365" expanded="true" signature="725:814" placeholder="INSERT INTO ..." />
-            <marker date="1478031802365" expanded="true" signature="1030:1092" placeholder="INSERT INTO ..." />
-            <marker date="1478031802365" expanded="true" signature="1382:1411" placeholder="SELECT * FRO..missing_value..." />
-            <marker date="1478031802365" expanded="true" signature="1987:2019" placeholder="SELECT pos F..." />
-            <marker date="1478031802365" expanded="true" signature="2103:2127" placeholder="SELECT COUNT..." />
-            <marker date="1478031802365" expanded="true" signature="3021:3053" placeholder="SELECT pos F..." />
-            <marker date="1478031802365" expanded="true" signature="3138:3166" placeholder="DELETE FROM ..." />
+            <element signature="e#655#1304#0" expanded="false" />
+            <element signature="e#1390#1845#0" expanded="false" />
+            <element signature="e#1995#2996#0" expanded="false" />
+            <element signature="e#3028#3388#0" expanded="false" />
+            <element signature="e#4570#4641#0" expanded="false" />
+            <element signature="e#4703#4899#0" expanded="false" />
+            <element signature="e#4958#5089#0" expanded="false" />
+            <marker date="1478038191638" expanded="true" signature="337:481" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1478038191638" expanded="true" signature="799:888" placeholder="INSERT INTO ..." />
+            <marker date="1478038191638" expanded="true" signature="1104:1166" placeholder="INSERT INTO ..." />
+            <marker date="1478038191638" expanded="true" signature="1456:1485" placeholder="SELECT * FRO..missing_value..." />
+            <marker date="1478038191638" expanded="true" signature="2061:2093" placeholder="SELECT pos F..." />
+            <marker date="1478038191638" expanded="true" signature="2177:2201" placeholder="SELECT COUNT..." />
+            <marker date="1478038191638" expanded="true" signature="3095:3127" placeholder="SELECT pos F..." />
+            <marker date="1478038191638" expanded="true" signature="3212:3240" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -474,34 +623,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3723" max-vertical-offset="6137">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="2482">
           <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
-            <element signature="e#581#1230#0" expanded="false" />
-            <element signature="e#1316#1771#0" expanded="false" />
-            <element signature="e#1921#2922#0" expanded="false" />
-            <element signature="e#2954#3314#0" expanded="false" />
-            <element signature="e#4496#4567#0" expanded="false" />
-            <element signature="e#4629#4825#0" expanded="false" />
-            <element signature="e#4884#5015#0" expanded="false" />
-            <marker date="1478031802365" expanded="true" signature="263:407" placeholder="CREATE TABLE..if..." />
-            <marker date="1478031802365" expanded="true" signature="725:814" placeholder="INSERT INTO ..." />
-            <marker date="1478031802365" expanded="true" signature="1030:1092" placeholder="INSERT INTO ..." />
-            <marker date="1478031802365" expanded="true" signature="1382:1411" placeholder="SELECT * FRO..missing_value..." />
-            <marker date="1478031802365" expanded="true" signature="1987:2019" placeholder="SELECT pos F..." />
-            <marker date="1478031802365" expanded="true" signature="2103:2127" placeholder="SELECT COUNT..." />
-            <marker date="1478031802365" expanded="true" signature="3021:3053" placeholder="SELECT pos F..." />
-            <marker date="1478031802365" expanded="true" signature="3138:3166" placeholder="DELETE FROM ..." />
+            <element signature="e#655#1304#0" expanded="false" />
+            <element signature="e#1390#1845#0" expanded="false" />
+            <element signature="e#1995#2996#0" expanded="false" />
+            <element signature="e#3028#3388#0" expanded="false" />
+            <element signature="e#4570#4641#0" expanded="false" />
+            <element signature="e#4703#4899#0" expanded="false" />
+            <element signature="e#4958#5089#0" expanded="false" />
+            <marker date="1478038191638" expanded="true" signature="337:481" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1478038191638" expanded="true" signature="799:888" placeholder="INSERT INTO ..." />
+            <marker date="1478038191638" expanded="true" signature="1104:1166" placeholder="INSERT INTO ..." />
+            <marker date="1478038191638" expanded="true" signature="1456:1485" placeholder="SELECT * FRO..missing_value..." />
+            <marker date="1478038191638" expanded="true" signature="2061:2093" placeholder="SELECT pos F..." />
+            <marker date="1478038191638" expanded="true" signature="2177:2201" placeholder="SELECT COUNT..." />
+            <marker date="1478038191638" expanded="true" signature="3095:3127" placeholder="SELECT pos F..." />
+            <marker date="1478038191638" expanded="true" signature="3212:3240" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -524,17 +666,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="453">
           <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308" vertical-offset="374" max-vertical-offset="935">
+        <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="935">
           <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -546,21 +685,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="1479">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+            <element signature="e#655#1304#0" expanded="false" />
+            <element signature="e#1390#1845#0" expanded="false" />
+            <element signature="e#1995#2996#0" expanded="false" />
+            <element signature="e#3028#3388#0" expanded="false" />
+            <element signature="e#4570#4641#0" expanded="false" />
+            <element signature="e#4703#4899#0" expanded="false" />
+            <element signature="e#4958#5089#0" expanded="false" />
+            <marker date="1478038191638" expanded="true" signature="337:481" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1478038191638" expanded="true" signature="799:888" placeholder="INSERT INTO ..." />
+            <marker date="1478038191638" expanded="true" signature="1104:1166" placeholder="INSERT INTO ..." />
+            <marker date="1478038191638" expanded="true" signature="1456:1485" placeholder="SELECT * FRO..missing_value..." />
+            <marker date="1478038191638" expanded="true" signature="2061:2093" placeholder="SELECT pos F..." />
+            <marker date="1478038191638" expanded="true" signature="2177:2201" placeholder="SELECT COUNT..." />
+            <marker date="1478038191638" expanded="true" signature="3095:3127" placeholder="SELECT pos F..." />
+            <marker date="1478038191638" expanded="true" signature="3212:3240" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/player.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.192307" vertical-offset="601" max-vertical-offset="1411">
-          <caret line="54" column="76" selection-start-line="54" selection-start-column="76" selection-end-line="54" selection-end-column="76" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="295" max-vertical-offset="1224">
+          <caret line="51" column="62" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.0" vertical-offset="51" max-vertical-offset="2669">
-          <caret line="262" column="32" selection-start-line="262" selection-start-column="32" selection-end-line="262" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.6784969" vertical-offset="1222" max-vertical-offset="3672">
+          <caret line="283" column="4" selection-start-line="283" selection-start-column="4" selection-end-line="283" selection-end-column="4" />
           <folding>
-            <element signature="e#60#211#0" expanded="false" />
-            <element signature="n#!!block;n#onYouTubeIframeAPIReady#0" expanded="false" />
             <element signature="n#!!block;n#skipVideo#0" expanded="false" />
             <element signature="n#!!block;n#search#0" expanded="false" />
             <element signature="n#!!block;n#searchRelatedVideos#0" expanded="false" />
@@ -568,35 +730,7 @@
             <element signature="n#!!block;n#getPlaylistPlayer#0" expanded="false" />
             <element signature="n#!!block;n#getPlaylist#0" expanded="false" />
             <element signature="n#!!block;n#displayPlaylist#0" expanded="false" />
-            <element signature="e#5636#5748#0" expanded="false" />
-            <element signature="e#5752#5856#0" expanded="false" />
             <element signature="n#!!block;n#getOutput#0" expanded="false" />
-            <element signature="e#9967#10988#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2553648" vertical-offset="0" max-vertical-offset="1479">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-            <element signature="e#581#1230#0" expanded="false" />
-            <element signature="e#1316#1771#0" expanded="false" />
-            <element signature="e#1921#2922#0" expanded="false" />
-            <element signature="e#2954#3314#0" expanded="false" />
-            <element signature="e#4496#4567#0" expanded="false" />
-            <element signature="e#4629#4825#0" expanded="false" />
-            <element signature="e#4884#5015#0" expanded="false" />
-            <marker date="1478031802365" expanded="true" signature="263:407" placeholder="CREATE TABLE..if..." />
-            <marker date="1478031802365" expanded="true" signature="725:814" placeholder="INSERT INTO ..." />
-            <marker date="1478031802365" expanded="true" signature="1030:1092" placeholder="INSERT INTO ..." />
-            <marker date="1478031802365" expanded="true" signature="1382:1411" placeholder="SELECT * FRO..missing_value..." />
-            <marker date="1478031802365" expanded="true" signature="1987:2019" placeholder="SELECT pos F..." />
-            <marker date="1478031802365" expanded="true" signature="2103:2127" placeholder="SELECT COUNT..." />
-            <marker date="1478031802365" expanded="true" signature="3021:3053" placeholder="SELECT pos F..." />
-            <marker date="1478031802365" expanded="true" signature="3138:3166" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
