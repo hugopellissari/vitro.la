@@ -47,7 +47,7 @@ a{
 
 .list-right{
 	float:right;
-	width:78%;
+	width:90%;
 }
 
 .material-icons{
@@ -107,7 +107,7 @@ a{
 }
 
 .ui-menu-item{
-    font-size:14px;
+    font-size:16px;
 }
 
 .ui-menu-item .ui-menu-item-wrapper{

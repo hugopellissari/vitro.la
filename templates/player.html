@@ -24,43 +24,49 @@
              </div>
         </nav>
 
-
-        <div class="col-lg-12  container-fluid">
-            <div id="videocontainer" class="embed-responsive embed-responsive-16by9">
-                <div id="playerContainer" class="playerContainer"></div>
-            </div>
-        </div>
-
-        <div id="playbackControl" class="panel panel-default">
-            <div id="playback-wrapper">
-                <i id="skipPrevious" class = "material-icons" style="font-size:36px;">skip_previous</i>
-                <i id="play" class = "material-icons" style="font-size:40px;">play_arrow</i>
-                <i id="pause" class = "material-icons" style="font-size:40px;">pause</i>
-                <i id="skipNext" class = "material-icons"style="font-size:36px;">skip_next</i>
-            </div>
-        </div>
+        <div class="row-fluid">
+            <div class="col-sm-8  container-fluid">
 
 
-
-        <div id="containerPlaylist" class = "panel panel-default">
-            <div class="panel-heading">Playlist
-                <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">Automatic Mode</button>
-            </div>
-            <ul id="playlist" class="list-group"></ul>
-        </div>
-
-        <div id="searchContainer" class="panel panel-default">
-            <div class="panel-heading"> Search
-            <form id="search-form" name="search-form" onsubmit="return search()" method="POST">
-                <div class="fieldcontainer">
-                    <input type="search" id="query" class="input-lg">
-                    <input type="submit" name="search-btn" id="search-btn" placeholder="Search...">
+                <div id="videocontainer" class="embed-responsive embed-responsive-16by9">
+                    <div id="playerContainer" class="playerContainer"></div>
                 </div>
-            </form>
+
+
+                 <div id="playbackControl" class="panel panel-default">
+                     <div id="playback-wrapper">
+                         <i id="skipPrevious" class = "material-icons" style="font-size:36px;">skip_previous</i>
+                         <i id="play" class = "material-icons" style="font-size:40px;">play_arrow</i>
+                         <i id="pause" class = "material-icons" style="font-size:40px;">pause</i>
+                         <i id="skipNext" class = "material-icons"style="font-size:36px;">skip_next</i>
+                     </div>
+                 </div>
+
+                  <div id="containerPlaylist" class = "panel panel-default">
+                       <div class="panel-heading">Playlist
+                       <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">Automatic Mode</button>
+                       </div>
+                       <ul id="playlist" class="list-group"></ul>
+                   </div>
             </div>
 
-            <ul id="results"></ul>
+            <div class="col-sm-4 container-fluid">
+                    <div id="searchContainer" class="panel panel-default">
+                         <div class="panel-heading">
+                            <form id="search-form" name="search-form" onsubmit="return search()" method="POST">
+                            <div class="fieldcontainer">
+                               <input type="search" id="query" class="input-lg" placeholder="Search">
+                                <input type="submit" name="search-btn" id="search-btn" placeholder="Search...">
+                            </div>
+                            </form>
+                           </div>
+                           <ul id="results"></ul>
+                    </div>
+            </div>
         </div>
+
+
+
 
 
   </body>

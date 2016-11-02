@@ -246,11 +246,11 @@ function getOutput(item){
     var duration = convertTime(item.contentDetails.duration);
 
     var output = '<li class = "search-list">' +
-                '<div class="list-left">' + 
+          //      '<div class="list-left">' +
          //       '<img src="'+thumb+'">' +
-                '</div>' +
+         //       '</div>' +
 				'<div class ="list-right">' + 
-				'<h3>'+title+'</h3>' +
+				'<h4>'+title+'</h4>' +
                 '<p>'+duration+'</p>' +
                 '<div id="buttonsResult" class="buttonsContainer">' +
                 '<button class="addNext" type="button" video-id= '+ videoId +' video-title= '+'"'+title+'"'+' video-duration= '+duration+' >Add as next</button>' +
@@ -332,6 +332,9 @@ $(document).ready(function(){
     $('#playlist').on("click",'#clear',function() {
         var juke = $("#jukename").text();
         var id = $(this).attr("dbId");
+        if(cursor+1==$('#containerPlaylist ul li').length){
+            cursor--;
+        }
         $.post("/delete",{jukename: juke, id: id},function(data){});
         getPlaylist();
     })
