@@ -54,10 +54,6 @@ a{
     cursor:default;
 }
 
-#playlist{
-    max-height: 300px;
-    overflow-y:auto;
-}
 
 #playlist li p,i {
     display: inline;
@@ -82,6 +78,9 @@ a{
     font-size:0;
 }
 
+.search-list:hover{
+    background: #cccccc;
+ }
 
 #clear {
     float: right;

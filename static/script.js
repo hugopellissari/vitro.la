@@ -245,7 +245,7 @@ function getOutput(item){
     var thumb = item.snippet.thumbnails.high.url;
     var duration = convertTime(item.contentDetails.duration);
 
-    var output = '<li class = "search-list">' +
+    var output = '<li class = "search-list" class="addNext" type="button" video-id= '+ videoId +' video-title= '+'"'+title+'"'+' video-duration= '+duration+'>' +
           //      '<div class="list-left">' +
          //       '<img src="'+thumb+'">' +
          //       '</div>' +
@@ -253,8 +253,8 @@ function getOutput(item){
 				'<h4>'+title+'</h4>' +
                 '<p>'+duration+'</p>' +
                 '<div id="buttonsResult" class="buttonsContainer">' +
-                '<button class="addNext" type="button" video-id= '+ videoId +' video-title= '+'"'+title+'"'+' video-duration= '+duration+' >Add as next</button>' +
-                '<button class="addEnd "type="button" video-id= '+ videoId +' video-title= '+'"'+title+'"'+' video-duration= '+duration+'>Add to the end</button>' +
+          //      '<button class="addNext" type="button" video-id= '+ videoId +' video-title= '+'"'+title+'"'+' video-duration= '+duration+' >Add as next</button>' +
+        //        '<button class="addEnd "type="button" video-id= '+ videoId +' video-title= '+'"'+title+'"'+' video-duration= '+duration+'>Add to the end</button>' +
                 //'</div>' +
 				'</div>' +
 				'</li>' +
@@ -290,7 +290,7 @@ $(document).ready(function(){
     getPlaylist();
 
 
-    $('#results').on("click",'.addEnd',function(){
+    $('#results').on("click",'.search-list',function(){
         var juke = $("#jukename ").text();
         var url = $(this).attr("video-id");
         var vtitle = $(this).attr("video-title");
