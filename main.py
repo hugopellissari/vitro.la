@@ -1,12 +1,24 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, redirect, flash
+from wtforms import StringField, SubmitField
+from flask_wtf import Form
+from wtforms.validators import DataRequired, Regexp
 import sqlite3 as sql
 import collections
 
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = 'thisismyfuckingsecretkey'
+app.config['CSRF_ENABLED'] = True
 
 dbPath="C:\\Users\\K45VM-VX105H\Desktop\\jk-trying to save\\aqueous-ravine-18064\\jukebox.db"
 
+class createForm(Form):
+    jukeName = StringField('jukeName', validators=[DataRequired(message="You have to name your jukebox"), Regexp('^[a-zA-Z]*$',message="Only letters are allowed, no space allowed")])
+    createButton = SubmitField()
+
+class remoteForm(Form):
+    jukeName = StringField('jukeName', validators=[DataRequired(message="You have to name your jukebox"), Regexp('^[a-zA-Z]*$',message="Only letters are allowed, no space allowed")])
+    remoteButton = SubmitField()
 
 def create_juketable(tablename):
     con = sql.connect(dbPath)
@@ -92,29 +104,41 @@ def clear(tablename, id):
     con.commit()
     con.close()
 
+def flash_errors(form):
+    for field, errors in form.errors.items():
+        for error in errors:
+            flash(u"%s" % (
+                error
+            ))
 
 
-
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
-    return render_template("index.html")
+    #Ativa o player caso esteja tudo certo
+    formCreatePlaylist = createForm()
+    formRemote=remoteForm()
+
+    if formCreatePlaylist.createButton.data and formCreatePlaylist.validate_on_submit():
+        #se validado corretamente, adiciona na db e renderiza pagina
+        jukename = request.form["jukeName"].lower()
+        if(create_juketable(jukename)==False):
+            flash("This table already exists")
+            return render_template("index.html", formCreatePlaylist=formCreatePlaylist, formRemote=formRemote)
+        else:
+            return render_template("player.html", jukename=jukename)
+
+    if formRemote.remoteButton.data and formRemote.validate_on_submit():
+        jukename = request.form["jukeName"].lower()
+        if(create_juketable(jukename)!=False):
+            flash("We couldn't find this jukebox")
+            return render_template("index.html", formCreatePlaylist=formCreatePlaylist, formRemote=formRemote)
+        else:
+            return render_template("remote.html", jukename=jukename)
 
 
-@app.route('/juke', methods=['POST'])
-def juke():
-    jukename = request.form["jukeName"]
-    if(create_juketable(jukename)==False):
-        return render_template("index.html", tableExists="This name is already taken")
-    else:
-        return render_template("player.html", jukename=jukename)
+    flash_errors(formCreatePlaylist)
+    return render_template("index.html", formCreatePlaylist=formCreatePlaylist, formRemote=formRemote)
 
-@app.route('/jukeConnect', methods=['POST'])
-def jukeConnect():
-    jukename = request.form["jukeName"]
-    if(create_juketable(jukename)!=False):
-        return render_template("index.html", tableNotExist="We couldn't find this jukebox")
-    else:
-        return render_template("remote.html", jukename=jukename)
 
 @app.route('/add', methods=['POST'])
 def add():

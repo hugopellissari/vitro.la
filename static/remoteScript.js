@@ -225,11 +225,6 @@ function displayPlaylist(item,i){
     var output = liTag +
                 //'<i id="playPlaylist" class = "material-icons">play_arrow</i>' +
                 '<p id="songTitle">'+title+'</p>' +
-                '<span class="moveSong">'+
-                '<i id="clear" class = "material-icons" dbId='+dbid+'>clear</i>' +
-                '<i id="moveUp" class = "material-icons" dbId='+dbid+'>expand_more</i>' +
-                '<i id="moveDown" class = "material-icons" dbId='+dbid+'>expand_less</i>' +
-                '</span>'+
 				'<p id="songDuration">'+duration+'</p>' +
 				'</li>' +
 				'<div class="clearfix"></div>' +

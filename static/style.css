@@ -54,6 +54,16 @@ a{
     cursor:default;
 }
 
+#search-btn{
+    background: transparent;
+    border: none !important;
+    font-size:0;
+}
+
+.search-list:hover{
+    background: #cccccc;
+ }
+
 
 #playlist li p,i {
     display: inline;
@@ -71,16 +81,6 @@ a{
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
-#search-btn{
-    background: transparent;
-    border: none !important;
-    font-size:0;
-}
-
-.search-list:hover{
-    background: #cccccc;
- }
 
 #clear {
     float: right;
@@ -116,4 +116,9 @@ a{
 
 .ui-menu-item .ui-menu-item-wrapper{
     height:30px;
+}
+
+
+#autoButton{
+
 }
