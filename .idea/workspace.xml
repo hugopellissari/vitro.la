@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03a57496-0155-4e29-885c-29c413ea012a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/remoteScript.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/requeriments.txt" />
-      <change type="DELETED" beforePath="C:\Users\K45VM-VX105H\Desktop\jk-trying to save\aqueous-ravine-18064\requirements.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jukebox.db" afterPath="$PROJECT_DIR$/jukebox.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/player.html" afterPath="$PROJECT_DIR$/templates/player.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/remote.html" afterPath="$PROJECT_DIR$/templates/remote.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/script.js" afterPath="$PROJECT_DIR$/static/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style.css" afterPath="$PROJECT_DIR$/static/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/requirements.txt" />
+      <change type="DELETED" beforePath="C:\Users\K45VM-VX105H\Desktop\jk-trying to save\aqueous-ravine-18064\requeriments.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jk-deploy.iws" />
@@ -46,7 +38,7 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.2931035" vertical-offset="757" max-vertical-offset="1938">
+            <state vertical-scroll-proportion="3.4683907" vertical-offset="0" max-vertical-offset="1938">
               <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
               <folding>
                 <element signature="e#0#75#0" expanded="true" />
@@ -1025,7 +1017,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2931035" vertical-offset="757" max-vertical-offset="1938">
+        <state vertical-scroll-proportion="3.4683907" vertical-offset="0" max-vertical-offset="1938">
           <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
           <folding>
             <element signature="e#0#75#0" expanded="true" />
