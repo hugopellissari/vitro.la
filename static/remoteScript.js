@@ -1,4 +1,4 @@
-var cursor;
+var cursor=0;
 var flag=0;
 var flagAutoAdded=1; //quando video para e musica auto é adicionada, flag==1. Volta a zero quando video muda de estado para ENDED
 var automaticMode=1;
@@ -6,56 +6,14 @@ var suggestCallBack;
 
 
 
-$(function(){
+$(function() {
     var searchField = $('#query');
     var icon = $('#search-btn');
 
-    $('#search-form').submit(function(e){
+    $('#search-form').submit(function (e) {
         e.preventDefault();
     });
-
 });
-
-var player;
-
-function onYouTubeIframeAPIReady() {
-    player = new YT.Player('playerContainer', {
-        width: '100%',
-        height: '100%',
-        videoId: '',
-        enablejsapi:1,
-        playerVars: {
-            color: 'white'
-        },
-        events: {
-            onReady: onPlayerReady,
-            onStateChange: onPlayerStateChange
-        }
-    });
-}
-
-function onPlayerReady(){
-    cursor=0;
-    getPlaylistPlayer(function(results){
-        if(results.length>0){
-            player.loadVideoById(results[0].videoid);
-            flag=1;
-        }
-    });
-}
-
-function onPlayerStateChange(event){
-
-    if(event.data == YT.PlayerState.ENDED){
-        skipVideo(1);
-        getPlaylist();
-        flagAutoAdded=0;
-    }
-
-    if(event.data == YT.PlayerState.ENDED && $('#containerPlaylist ul li').length == 0){
-        flag = 0;
-    }
-}
 
 function skipVideo(dir){
     if(dir==0){
@@ -236,21 +194,13 @@ function getOutput(item){
 
     var videoId = item.id;
     var title = item.snippet.title;
-    var description = item.snippet.description;
-    var thumb = item.snippet.thumbnails.high.url;
     var duration = convertTime(item.contentDetails.duration);
 
-    var output = '<li class = "search-list" class="addNext" type="button" video-id= '+ videoId +' video-title= '+'"'+title+'"'+' video-duration= '+duration+'>' +
-          //      '<div class="list-left">' +
-         //       '<img src="'+thumb+'">' +
-         //       '</div>' +
-				'<div class ="list-right">' + 
+    var output = '<li class = "search-list" type="button" video-id= '+ videoId +' video-title= '+'"'+title+'"'+' video-duration= '+duration+'>' +
+				'<div class ="list-right">' +
 				'<h4>'+title+'</h4>' +
                 '<p>'+duration+'</p>' +
                 '<div id="buttonsResult" class="buttonsContainer">' +
-          //      '<button class="addNext" type="button" video-id= '+ videoId +' video-title= '+'"'+title+'"'+' video-duration= '+duration+' >Add as next</button>' +
-        //        '<button class="addEnd "type="button" video-id= '+ videoId +' video-title= '+'"'+title+'"'+' video-duration= '+duration+'>Add to the end</button>' +
-                //'</div>' +
 				'</div>' +
 				'</li>' +
 				'<div class="clearfix"></div>' + 
@@ -286,7 +236,7 @@ $(document).ready(function(){
 
 
     $('#results').on("click",'.search-list',function(){
-        var juke = $("#jukename ").text();
+        var juke = $("#jukename").text();
         var url = $(this).attr("video-id");
         var vtitle = $(this).attr("video-title");
         var vduration = $(this).attr("video-duration");
