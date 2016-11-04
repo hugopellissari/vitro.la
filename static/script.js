@@ -87,7 +87,7 @@ function search() {
         "https://www.googleapis.com/youtube/v3/search", {
             part: 'snippet, id',
             q: q,
-            maxResults: 10,
+            maxResults: 20,
             type: 'video',
             videoCategoryId: 10,
             key: 'AIzaSyAyCS7wxWvJB3sG5Qmd2MOpB9J50v-NLaY'
@@ -216,10 +216,11 @@ function displayPlaylist(item,i){
     var dbid = item.id;
 
     if (i == cursor) {
-        var liTag = '<li class = "list-group-item active" video-id= ' + videoId + ' dbId=' + dbid + '>';
+        var liTag = '<li id="playlistItem" class = "list-group-item active" video-id= ' + videoId + ' dbId=' + dbid +'index='+i+'>';
     }else{
-        var liTag = '<li class = "list-group-item" video-id= ' + videoId + ' dbId=' + dbid + '>'
+        var liTag = '<li id="playlistItem" class = "list-group-item" video-id= ' + videoId + ' dbId=' + dbid +'index='+i+'>'
     }
+
 
 
     var output = liTag +
@@ -249,10 +250,10 @@ function getOutput(item){
           //      '<div class="list-left">' +
          //       '<img src="'+thumb+'">' +
          //       '</div>' +
-				'<div class ="list-right">' + 
-				'<h4>'+title+'</h4>' +
+				'<div class ="list-right">' +
+				'<h5>'+title+'</h5>' +
                 '<p>'+duration+'</p>' +
-                '<div id="buttonsResult" class="buttonsContainer">' +
+           //     '<div id="buttonsResult" class="buttonsContainer">' +
           //      '<button class="addNext" type="button" video-id= '+ videoId +' video-title= '+'"'+title+'"'+' video-duration= '+duration+' >Add as next</button>' +
         //        '<button class="addEnd "type="button" video-id= '+ videoId +' video-title= '+'"'+title+'"'+' video-duration= '+duration+'>Add to the end</button>' +
                 //'</div>' +
@@ -273,8 +274,7 @@ function update(){
             flag=1;
         });
     }
-        console.log(flagAutoAdded);
-    if(player.getPlayerState()==0 && playSize>=1){
+    if(player.getPlayerState()==0  && playSize>=1){
 
         if(automaticMode==1 && (playSize)==(cursor+1) && flagAutoAdded==0){
             flagAutoAdded=1;
@@ -283,6 +283,7 @@ function update(){
          skipVideo(1);
     }
     getPlaylist();
+                console.log(player.getPlayerState());
 
 }
 
@@ -312,14 +313,13 @@ $(document).ready(function(){
         getPlaylist();
     });
 
-
     $('#playlist').on("click",'#moveDown',function() {
         var juke = $("#jukename").text();
         var id = $(this).attr("dbId");
         $.post("/reorder",{jukename: juke, id: id, direction:0},function(data){});
         cursor--;
         getPlaylist();
-    })
+    });
 
     $('#playlist').on("click",'#moveUp',function() {
         var juke = $("#jukename").text();
@@ -327,17 +327,25 @@ $(document).ready(function(){
         $.post("/reorder",{jukename: juke, id: id, direction:1},function(data){});
         cursor++;
         getPlaylist();
-    })
+    });
 
     $('#playlist').on("click",'#clear',function() {
         var juke = $("#jukename").text();
         var id = $(this).attr("dbId");
         if(cursor+1==$('#containerPlaylist ul li').length){
+            $.post("/delete",{jukename: juke, id: id},function(data){});
             cursor--;
+            flag=0;
+            getPlaylist();
+        }else{
+            $.post("/delete",{jukename: juke, id: id},function(data){});
+            getPlaylistPlayer(function(results){
+                player.loadVideoById(results[cursor].videoid);
+                flag=1;
+            getPlaylist();
+        });
         }
-        $.post("/delete",{jukename: juke, id: id},function(data){});
-        getPlaylist();
-    })
+    });
 
 
     $('#playbackControl').on("click",'#skipPrevious',function(){
@@ -361,7 +369,6 @@ $(document).ready(function(){
     //terminar isso aqui
     $('.panel-heading').on("click",'#autoButton',function(){
         $('#autoButton').toggleClass("active");
-        console.log("clicked");
     });
 
     $("#query").autocomplete({

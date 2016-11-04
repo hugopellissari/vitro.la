@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="03a57496-0155-4e29-885c-29c413ea012a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jukebox.db" afterPath="$PROJECT_DIR$/jukebox.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/remote.html" afterPath="$PROJECT_DIR$/templates/remote.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/remoteScript.js" afterPath="$PROJECT_DIR$/static/remoteScript.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/script.js" afterPath="$PROJECT_DIR$/static/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/style.css" afterPath="$PROJECT_DIR$/static/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jk-deploy.iws" />
@@ -22,7 +25,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/jk-deploy$jk_deploy.coverage" NAME="jk-deploy Coverage Results" MODIFIED="1478213843769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/jk-deploy$jk_deploy.coverage" NAME="jk-deploy Coverage Results" MODIFIED="1478275173369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -36,57 +39,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="1938">
-              <caret line="140" column="0" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.6826004" vertical-offset="663" max-vertical-offset="1938">
+              <caret line="130" column="42" selection-start-line="130" selection-start-column="42" selection-end-line="130" selection-end-column="42" />
               <folding>
                 <element signature="e#0#75#0" expanded="true" />
-                <element signature="e#968#1275#0" expanded="false" />
-                <element signature="e#1365#2014#0" expanded="false" />
-                <element signature="e#2100#2555#0" expanded="false" />
-                <element signature="e#2705#3706#0" expanded="false" />
-                <element signature="e#3738#4098#0" expanded="false" />
-                <marker date="1478209783692" expanded="true" signature="1047:1191" placeholder="CREATE TABLE..missing_value..." />
-                <marker date="1478209783692" expanded="true" signature="1509:1598" placeholder="INSERT INTO ..." />
-                <marker date="1478209783692" expanded="true" signature="1814:1876" placeholder="INSERT INTO ..." />
-                <marker date="1478209783692" expanded="true" signature="2166:2195" placeholder="SELECT * FRO..missing_value..." />
-                <marker date="1478209783692" expanded="true" signature="2771:2803" placeholder="SELECT pos F..." />
-                <marker date="1478209783692" expanded="true" signature="2887:2911" placeholder="SELECT COUNT..." />
-                <marker date="1478209783692" expanded="true" signature="3805:3837" placeholder="SELECT pos F..." />
-                <marker date="1478209783692" expanded="true" signature="3922:3950" placeholder="DELETE FROM ..." />
+                <element signature="e#969#1276#0" expanded="false" />
+                <element signature="e#1366#2015#0" expanded="false" />
+                <element signature="e#2101#2556#0" expanded="false" />
+                <element signature="e#2706#3707#0" expanded="false" />
+                <element signature="e#3739#4099#0" expanded="false" />
+                <marker date="1478275173369" expanded="true" signature="1048:1192" placeholder="CREATE TABLE..missing_value..." />
+                <marker date="1478275173369" expanded="true" signature="1510:1599" placeholder="INSERT INTO ..." />
+                <marker date="1478275173369" expanded="true" signature="1815:1877" placeholder="INSERT INTO ..." />
+                <marker date="1478275173369" expanded="true" signature="2167:2196" placeholder="SELECT * FRO..missing_value..." />
+                <marker date="1478275173369" expanded="true" signature="2772:2804" placeholder="SELECT pos F..." />
+                <marker date="1478275173369" expanded="true" signature="2888:2912" placeholder="SELECT COUNT..." />
+                <marker date="1478275173369" expanded="true" signature="3806:3838" placeholder="SELECT pos F..." />
+                <marker date="1478275173369" expanded="true" signature="3923:3951" placeholder="DELETE FROM ..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="remoteScript.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/remoteScript.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46082088" vertical-offset="348" max-vertical-offset="884">
-              <caret line="233" column="0" selection-start-line="233" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!block;n#skipVideo#0" expanded="false" />
-                <element signature="n#!!block;n#search#0" expanded="false" />
-                <element signature="n#!!block;n#searchRelatedVideos#0" expanded="false" />
-                <element signature="n#!!block;n#convertTime#0" expanded="false" />
-                <element signature="n#!!block;n#getPlaylistPlayer#0" expanded="false" />
-                <element signature="n#!!block;n#getPlaylist#0" expanded="false" />
-                <element signature="n#!!block;n#displayPlaylist#0" expanded="false" />
-                <element signature="n#!!block;n#getOutput#0" expanded="false" />
-                <element signature="n#!!block;n#update#0" expanded="false" />
-                <element signature="e#7188#10689#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="remote.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/remote.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154" vertical-offset="357" max-vertical-offset="1003">
-              <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+            <state vertical-scroll-proportion="-15.0" vertical-offset="528" max-vertical-offset="1190">
+              <caret line="54" column="43" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -95,8 +77,18 @@
       <file leaf-file-name="player.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/player.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.1923075" vertical-offset="357" max-vertical-offset="1326">
+            <state vertical-scroll-proportion="-4.8461537" vertical-offset="418" max-vertical-offset="1326">
               <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.411765" vertical-offset="598" max-vertical-offset="2227">
+              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -110,13 +102,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/static/style.css" />
         <option value="$PROJECT_DIR$/templates/player.html" />
+        <option value="$PROJECT_DIR$/templates/remote.html" />
+        <option value="$PROJECT_DIR$/static/style.css" />
+        <option value="$PROJECT_DIR$/static/remoteScript.js" />
         <option value="$PROJECT_DIR$/static/script.js" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/templates/remote.html" />
-        <option value="$PROJECT_DIR$/static/remoteScript.js" />
       </list>
     </option>
   </component>
@@ -162,7 +154,7 @@
     <property name="full.screen.before.presentation.mode" value="false" />
   </component>
   <component name="RunManager" selected="Python.jk-deploy">
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -175,46 +167,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="jk-deploy" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="jk-deploy" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="jk-deploy" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
@@ -242,83 +199,6 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="jk-deploy" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Attests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="jk-deploy" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="jk-deploy" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="jk-deploy" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="TARGET" value="" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Nosetests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -341,6 +221,84 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="jk-deploy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="jk-deploy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="jk-deploy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="jk-deploy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -348,6 +306,40 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="jk-deploy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="jk-deploy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
       <method />
     </configuration>
     <configuration default="false" name="jk-deploy" type="PythonConfigurationType" factoryName="Python" singleton="true">
@@ -388,51 +380,51 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1384" height="786" extended-state="6" />
+    <frame x="-9" y="-9" width="1384" height="786" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13918306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13918306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4236006" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13918306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -464,19 +456,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#75#0" expanded="true" />
-            <element signature="e#968#1275#0" expanded="false" />
-            <element signature="e#1365#2014#0" expanded="false" />
-            <element signature="e#2100#2555#0" expanded="false" />
-            <element signature="e#2705#3706#0" expanded="false" />
-            <element signature="e#3738#4098#0" expanded="false" />
-            <marker date="1478209783692" expanded="true" signature="1047:1191" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1478209783692" expanded="true" signature="1509:1598" placeholder="INSERT INTO ..." />
-            <marker date="1478209783692" expanded="true" signature="1814:1876" placeholder="INSERT INTO ..." />
-            <marker date="1478209783692" expanded="true" signature="2166:2195" placeholder="SELECT * FRO..missing_value..." />
-            <marker date="1478209783692" expanded="true" signature="2771:2803" placeholder="SELECT pos F..." />
-            <marker date="1478209783692" expanded="true" signature="2887:2911" placeholder="SELECT COUNT..." />
-            <marker date="1478209783692" expanded="true" signature="3805:3837" placeholder="SELECT pos F..." />
-            <marker date="1478209783692" expanded="true" signature="3922:3950" placeholder="DELETE FROM ..." />
+            <element signature="e#969#1276#0" expanded="false" />
+            <element signature="e#1366#2015#0" expanded="false" />
+            <element signature="e#2101#2556#0" expanded="false" />
+            <element signature="e#2706#3707#0" expanded="false" />
+            <element signature="e#3739#4099#0" expanded="false" />
+            <marker date="1478275173369" expanded="true" signature="1048:1192" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1478275173369" expanded="true" signature="1510:1599" placeholder="INSERT INTO ..." />
+            <marker date="1478275173369" expanded="true" signature="1815:1877" placeholder="INSERT INTO ..." />
+            <marker date="1478275173369" expanded="true" signature="2167:2196" placeholder="SELECT * FRO..missing_value..." />
+            <marker date="1478275173369" expanded="true" signature="2772:2804" placeholder="SELECT pos F..." />
+            <marker date="1478275173369" expanded="true" signature="2888:2912" placeholder="SELECT COUNT..." />
+            <marker date="1478275173369" expanded="true" signature="3806:3838" placeholder="SELECT pos F..." />
+            <marker date="1478275173369" expanded="true" signature="3923:3951" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -485,7 +477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="248" max-vertical-offset="952">
           <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -517,19 +508,19 @@
           <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
           <folding>
             <element signature="e#0#75#0" expanded="true" />
-            <element signature="e#968#1275#0" expanded="false" />
-            <element signature="e#1365#2014#0" expanded="false" />
-            <element signature="e#2100#2555#0" expanded="false" />
-            <element signature="e#2705#3706#0" expanded="false" />
-            <element signature="e#3738#4098#0" expanded="false" />
-            <marker date="1478209783692" expanded="true" signature="1047:1191" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1478209783692" expanded="true" signature="1509:1598" placeholder="INSERT INTO ..." />
-            <marker date="1478209783692" expanded="true" signature="1814:1876" placeholder="INSERT INTO ..." />
-            <marker date="1478209783692" expanded="true" signature="2166:2195" placeholder="SELECT * FRO..missing_value..." />
-            <marker date="1478209783692" expanded="true" signature="2771:2803" placeholder="SELECT pos F..." />
-            <marker date="1478209783692" expanded="true" signature="2887:2911" placeholder="SELECT COUNT..." />
-            <marker date="1478209783692" expanded="true" signature="3805:3837" placeholder="SELECT pos F..." />
-            <marker date="1478209783692" expanded="true" signature="3922:3950" placeholder="DELETE FROM ..." />
+            <element signature="e#969#1276#0" expanded="false" />
+            <element signature="e#1366#2015#0" expanded="false" />
+            <element signature="e#2101#2556#0" expanded="false" />
+            <element signature="e#2706#3707#0" expanded="false" />
+            <element signature="e#3739#4099#0" expanded="false" />
+            <marker date="1478275173369" expanded="true" signature="1048:1192" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1478275173369" expanded="true" signature="1510:1599" placeholder="INSERT INTO ..." />
+            <marker date="1478275173369" expanded="true" signature="1815:1877" placeholder="INSERT INTO ..." />
+            <marker date="1478275173369" expanded="true" signature="2167:2196" placeholder="SELECT * FRO..missing_value..." />
+            <marker date="1478275173369" expanded="true" signature="2772:2804" placeholder="SELECT pos F..." />
+            <marker date="1478275173369" expanded="true" signature="2888:2912" placeholder="SELECT COUNT..." />
+            <marker date="1478275173369" expanded="true" signature="3806:3838" placeholder="SELECT pos F..." />
+            <marker date="1478275173369" expanded="true" signature="3923:3951" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -538,7 +529,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -570,19 +560,19 @@
           <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
           <folding>
             <element signature="e#0#75#0" expanded="true" />
-            <element signature="e#968#1275#0" expanded="false" />
-            <element signature="e#1365#2014#0" expanded="false" />
-            <element signature="e#2100#2555#0" expanded="false" />
-            <element signature="e#2705#3706#0" expanded="false" />
-            <element signature="e#3738#4098#0" expanded="false" />
-            <marker date="1478209783692" expanded="true" signature="1047:1191" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1478209783692" expanded="true" signature="1509:1598" placeholder="INSERT INTO ..." />
-            <marker date="1478209783692" expanded="true" signature="1814:1876" placeholder="INSERT INTO ..." />
-            <marker date="1478209783692" expanded="true" signature="2166:2195" placeholder="SELECT * FRO..missing_value..." />
-            <marker date="1478209783692" expanded="true" signature="2771:2803" placeholder="SELECT pos F..." />
-            <marker date="1478209783692" expanded="true" signature="2887:2911" placeholder="SELECT COUNT..." />
-            <marker date="1478209783692" expanded="true" signature="3805:3837" placeholder="SELECT pos F..." />
-            <marker date="1478209783692" expanded="true" signature="3922:3950" placeholder="DELETE FROM ..." />
+            <element signature="e#969#1276#0" expanded="false" />
+            <element signature="e#1366#2015#0" expanded="false" />
+            <element signature="e#2101#2556#0" expanded="false" />
+            <element signature="e#2706#3707#0" expanded="false" />
+            <element signature="e#3739#4099#0" expanded="false" />
+            <marker date="1478275173369" expanded="true" signature="1048:1192" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1478275173369" expanded="true" signature="1510:1599" placeholder="INSERT INTO ..." />
+            <marker date="1478275173369" expanded="true" signature="1815:1877" placeholder="INSERT INTO ..." />
+            <marker date="1478275173369" expanded="true" signature="2167:2196" placeholder="SELECT * FRO..missing_value..." />
+            <marker date="1478275173369" expanded="true" signature="2772:2804" placeholder="SELECT pos F..." />
+            <marker date="1478275173369" expanded="true" signature="2888:2912" placeholder="SELECT COUNT..." />
+            <marker date="1478275173369" expanded="true" signature="3806:3838" placeholder="SELECT pos F..." />
+            <marker date="1478275173369" expanded="true" signature="3923:3951" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -591,7 +581,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="935">
           <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -623,19 +612,19 @@
           <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
           <folding>
             <element signature="e#0#75#0" expanded="true" />
-            <element signature="e#968#1275#0" expanded="false" />
-            <element signature="e#1365#2014#0" expanded="false" />
-            <element signature="e#2100#2555#0" expanded="false" />
-            <element signature="e#2705#3706#0" expanded="false" />
-            <element signature="e#3738#4098#0" expanded="false" />
-            <marker date="1478209783692" expanded="true" signature="1047:1191" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1478209783692" expanded="true" signature="1509:1598" placeholder="INSERT INTO ..." />
-            <marker date="1478209783692" expanded="true" signature="1814:1876" placeholder="INSERT INTO ..." />
-            <marker date="1478209783692" expanded="true" signature="2166:2195" placeholder="SELECT * FRO..missing_value..." />
-            <marker date="1478209783692" expanded="true" signature="2771:2803" placeholder="SELECT pos F..." />
-            <marker date="1478209783692" expanded="true" signature="2887:2911" placeholder="SELECT COUNT..." />
-            <marker date="1478209783692" expanded="true" signature="3805:3837" placeholder="SELECT pos F..." />
-            <marker date="1478209783692" expanded="true" signature="3922:3950" placeholder="DELETE FROM ..." />
+            <element signature="e#969#1276#0" expanded="false" />
+            <element signature="e#1366#2015#0" expanded="false" />
+            <element signature="e#2101#2556#0" expanded="false" />
+            <element signature="e#2706#3707#0" expanded="false" />
+            <element signature="e#3739#4099#0" expanded="false" />
+            <marker date="1478275173369" expanded="true" signature="1048:1192" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1478275173369" expanded="true" signature="1510:1599" placeholder="INSERT INTO ..." />
+            <marker date="1478275173369" expanded="true" signature="1815:1877" placeholder="INSERT INTO ..." />
+            <marker date="1478275173369" expanded="true" signature="2167:2196" placeholder="SELECT * FRO..missing_value..." />
+            <marker date="1478275173369" expanded="true" signature="2772:2804" placeholder="SELECT pos F..." />
+            <marker date="1478275173369" expanded="true" signature="2888:2912" placeholder="SELECT COUNT..." />
+            <marker date="1478275173369" expanded="true" signature="3806:3838" placeholder="SELECT pos F..." />
+            <marker date="1478275173369" expanded="true" signature="3923:3951" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -644,7 +633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="935">
           <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -676,19 +664,19 @@
           <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
           <folding>
             <element signature="e#0#75#0" expanded="true" />
-            <element signature="e#968#1275#0" expanded="false" />
-            <element signature="e#1365#2014#0" expanded="false" />
-            <element signature="e#2100#2555#0" expanded="false" />
-            <element signature="e#2705#3706#0" expanded="false" />
-            <element signature="e#3738#4098#0" expanded="false" />
-            <marker date="1478209783692" expanded="true" signature="1047:1191" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1478209783692" expanded="true" signature="1509:1598" placeholder="INSERT INTO ..." />
-            <marker date="1478209783692" expanded="true" signature="1814:1876" placeholder="INSERT INTO ..." />
-            <marker date="1478209783692" expanded="true" signature="2166:2195" placeholder="SELECT * FRO..missing_value..." />
-            <marker date="1478209783692" expanded="true" signature="2771:2803" placeholder="SELECT pos F..." />
-            <marker date="1478209783692" expanded="true" signature="2887:2911" placeholder="SELECT COUNT..." />
-            <marker date="1478209783692" expanded="true" signature="3805:3837" placeholder="SELECT pos F..." />
-            <marker date="1478209783692" expanded="true" signature="3922:3950" placeholder="DELETE FROM ..." />
+            <element signature="e#969#1276#0" expanded="false" />
+            <element signature="e#1366#2015#0" expanded="false" />
+            <element signature="e#2101#2556#0" expanded="false" />
+            <element signature="e#2706#3707#0" expanded="false" />
+            <element signature="e#3739#4099#0" expanded="false" />
+            <marker date="1478275173369" expanded="true" signature="1048:1192" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1478275173369" expanded="true" signature="1510:1599" placeholder="INSERT INTO ..." />
+            <marker date="1478275173369" expanded="true" signature="1815:1877" placeholder="INSERT INTO ..." />
+            <marker date="1478275173369" expanded="true" signature="2167:2196" placeholder="SELECT * FRO..missing_value..." />
+            <marker date="1478275173369" expanded="true" signature="2772:2804" placeholder="SELECT pos F..." />
+            <marker date="1478275173369" expanded="true" signature="2888:2912" placeholder="SELECT COUNT..." />
+            <marker date="1478275173369" expanded="true" signature="3806:3838" placeholder="SELECT pos F..." />
+            <marker date="1478275173369" expanded="true" signature="3923:3951" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -697,7 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="935">
           <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -722,19 +709,19 @@
           <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
           <folding>
             <element signature="e#0#75#0" expanded="true" />
-            <element signature="e#968#1275#0" expanded="false" />
-            <element signature="e#1365#2014#0" expanded="false" />
-            <element signature="e#2100#2555#0" expanded="false" />
-            <element signature="e#2705#3706#0" expanded="false" />
-            <element signature="e#3738#4098#0" expanded="false" />
-            <marker date="1478209783692" expanded="true" signature="1047:1191" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1478209783692" expanded="true" signature="1509:1598" placeholder="INSERT INTO ..." />
-            <marker date="1478209783692" expanded="true" signature="1814:1876" placeholder="INSERT INTO ..." />
-            <marker date="1478209783692" expanded="true" signature="2166:2195" placeholder="SELECT * FRO..missing_value..." />
-            <marker date="1478209783692" expanded="true" signature="2771:2803" placeholder="SELECT pos F..." />
-            <marker date="1478209783692" expanded="true" signature="2887:2911" placeholder="SELECT COUNT..." />
-            <marker date="1478209783692" expanded="true" signature="3805:3837" placeholder="SELECT pos F..." />
-            <marker date="1478209783692" expanded="true" signature="3922:3950" placeholder="DELETE FROM ..." />
+            <element signature="e#969#1276#0" expanded="false" />
+            <element signature="e#1366#2015#0" expanded="false" />
+            <element signature="e#2101#2556#0" expanded="false" />
+            <element signature="e#2706#3707#0" expanded="false" />
+            <element signature="e#3739#4099#0" expanded="false" />
+            <marker date="1478275173369" expanded="true" signature="1048:1192" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1478275173369" expanded="true" signature="1510:1599" placeholder="INSERT INTO ..." />
+            <marker date="1478275173369" expanded="true" signature="1815:1877" placeholder="INSERT INTO ..." />
+            <marker date="1478275173369" expanded="true" signature="2167:2196" placeholder="SELECT * FRO..missing_value..." />
+            <marker date="1478275173369" expanded="true" signature="2772:2804" placeholder="SELECT pos F..." />
+            <marker date="1478275173369" expanded="true" signature="2888:2912" placeholder="SELECT COUNT..." />
+            <marker date="1478275173369" expanded="true" signature="3806:3838" placeholder="SELECT pos F..." />
+            <marker date="1478275173369" expanded="true" signature="3923:3951" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -743,7 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="935">
           <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -768,19 +754,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#75#0" expanded="true" />
-            <element signature="e#968#1275#0" expanded="false" />
-            <element signature="e#1365#2014#0" expanded="false" />
-            <element signature="e#2100#2555#0" expanded="false" />
-            <element signature="e#2705#3706#0" expanded="false" />
-            <element signature="e#3738#4098#0" expanded="false" />
-            <marker date="1478209783692" expanded="true" signature="1047:1191" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1478209783692" expanded="true" signature="1509:1598" placeholder="INSERT INTO ..." />
-            <marker date="1478209783692" expanded="true" signature="1814:1876" placeholder="INSERT INTO ..." />
-            <marker date="1478209783692" expanded="true" signature="2166:2195" placeholder="SELECT * FRO..missing_value..." />
-            <marker date="1478209783692" expanded="true" signature="2771:2803" placeholder="SELECT pos F..." />
-            <marker date="1478209783692" expanded="true" signature="2887:2911" placeholder="SELECT COUNT..." />
-            <marker date="1478209783692" expanded="true" signature="3805:3837" placeholder="SELECT pos F..." />
-            <marker date="1478209783692" expanded="true" signature="3922:3950" placeholder="DELETE FROM ..." />
+            <element signature="e#969#1276#0" expanded="false" />
+            <element signature="e#1366#2015#0" expanded="false" />
+            <element signature="e#2101#2556#0" expanded="false" />
+            <element signature="e#2706#3707#0" expanded="false" />
+            <element signature="e#3739#4099#0" expanded="false" />
+            <marker date="1478275173369" expanded="true" signature="1048:1192" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1478275173369" expanded="true" signature="1510:1599" placeholder="INSERT INTO ..." />
+            <marker date="1478275173369" expanded="true" signature="1815:1877" placeholder="INSERT INTO ..." />
+            <marker date="1478275173369" expanded="true" signature="2167:2196" placeholder="SELECT * FRO..missing_value..." />
+            <marker date="1478275173369" expanded="true" signature="2772:2804" placeholder="SELECT pos F..." />
+            <marker date="1478275173369" expanded="true" signature="2888:2912" placeholder="SELECT COUNT..." />
+            <marker date="1478275173369" expanded="true" signature="3806:3838" placeholder="SELECT pos F..." />
+            <marker date="1478275173369" expanded="true" signature="3923:3951" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -789,7 +775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="935">
           <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -807,19 +792,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#75#0" expanded="true" />
-            <element signature="e#968#1275#0" expanded="false" />
-            <element signature="e#1365#2014#0" expanded="false" />
-            <element signature="e#2100#2555#0" expanded="false" />
-            <element signature="e#2705#3706#0" expanded="false" />
-            <element signature="e#3738#4098#0" expanded="false" />
-            <marker date="1478209783692" expanded="true" signature="1047:1191" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1478209783692" expanded="true" signature="1509:1598" placeholder="INSERT INTO ..." />
-            <marker date="1478209783692" expanded="true" signature="1814:1876" placeholder="INSERT INTO ..." />
-            <marker date="1478209783692" expanded="true" signature="2166:2195" placeholder="SELECT * FRO..missing_value..." />
-            <marker date="1478209783692" expanded="true" signature="2771:2803" placeholder="SELECT pos F..." />
-            <marker date="1478209783692" expanded="true" signature="2887:2911" placeholder="SELECT COUNT..." />
-            <marker date="1478209783692" expanded="true" signature="3805:3837" placeholder="SELECT pos F..." />
-            <marker date="1478209783692" expanded="true" signature="3922:3950" placeholder="DELETE FROM ..." />
+            <element signature="e#969#1276#0" expanded="false" />
+            <element signature="e#1366#2015#0" expanded="false" />
+            <element signature="e#2101#2556#0" expanded="false" />
+            <element signature="e#2706#3707#0" expanded="false" />
+            <element signature="e#3739#4099#0" expanded="false" />
+            <marker date="1478275173369" expanded="true" signature="1048:1192" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1478275173369" expanded="true" signature="1510:1599" placeholder="INSERT INTO ..." />
+            <marker date="1478275173369" expanded="true" signature="1815:1877" placeholder="INSERT INTO ..." />
+            <marker date="1478275173369" expanded="true" signature="2167:2196" placeholder="SELECT * FRO..missing_value..." />
+            <marker date="1478275173369" expanded="true" signature="2772:2804" placeholder="SELECT pos F..." />
+            <marker date="1478275173369" expanded="true" signature="2888:2912" placeholder="SELECT COUNT..." />
+            <marker date="1478275173369" expanded="true" signature="3806:3838" placeholder="SELECT pos F..." />
+            <marker date="1478275173369" expanded="true" signature="3923:3951" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -838,19 +823,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#75#0" expanded="true" />
-            <element signature="e#968#1275#0" expanded="false" />
-            <element signature="e#1365#2014#0" expanded="false" />
-            <element signature="e#2100#2555#0" expanded="false" />
-            <element signature="e#2705#3706#0" expanded="false" />
-            <element signature="e#3738#4098#0" expanded="false" />
-            <marker date="1478209783692" expanded="true" signature="1047:1191" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1478209783692" expanded="true" signature="1509:1598" placeholder="INSERT INTO ..." />
-            <marker date="1478209783692" expanded="true" signature="1814:1876" placeholder="INSERT INTO ..." />
-            <marker date="1478209783692" expanded="true" signature="2166:2195" placeholder="SELECT * FRO..missing_value..." />
-            <marker date="1478209783692" expanded="true" signature="2771:2803" placeholder="SELECT pos F..." />
-            <marker date="1478209783692" expanded="true" signature="2887:2911" placeholder="SELECT COUNT..." />
-            <marker date="1478209783692" expanded="true" signature="3805:3837" placeholder="SELECT pos F..." />
-            <marker date="1478209783692" expanded="true" signature="3922:3950" placeholder="DELETE FROM ..." />
+            <element signature="e#969#1276#0" expanded="false" />
+            <element signature="e#1366#2015#0" expanded="false" />
+            <element signature="e#2101#2556#0" expanded="false" />
+            <element signature="e#2706#3707#0" expanded="false" />
+            <element signature="e#3739#4099#0" expanded="false" />
+            <marker date="1478275173369" expanded="true" signature="1048:1192" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1478275173369" expanded="true" signature="1510:1599" placeholder="INSERT INTO ..." />
+            <marker date="1478275173369" expanded="true" signature="1815:1877" placeholder="INSERT INTO ..." />
+            <marker date="1478275173369" expanded="true" signature="2167:2196" placeholder="SELECT * FRO..missing_value..." />
+            <marker date="1478275173369" expanded="true" signature="2772:2804" placeholder="SELECT pos F..." />
+            <marker date="1478275173369" expanded="true" signature="2888:2912" placeholder="SELECT COUNT..." />
+            <marker date="1478275173369" expanded="true" signature="3806:3838" placeholder="SELECT pos F..." />
+            <marker date="1478275173369" expanded="true" signature="3923:3951" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -869,19 +854,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#75#0" expanded="true" />
-            <element signature="e#968#1275#0" expanded="false" />
-            <element signature="e#1365#2014#0" expanded="false" />
-            <element signature="e#2100#2555#0" expanded="false" />
-            <element signature="e#2705#3706#0" expanded="false" />
-            <element signature="e#3738#4098#0" expanded="false" />
-            <marker date="1478209783692" expanded="true" signature="1047:1191" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1478209783692" expanded="true" signature="1509:1598" placeholder="INSERT INTO ..." />
-            <marker date="1478209783692" expanded="true" signature="1814:1876" placeholder="INSERT INTO ..." />
-            <marker date="1478209783692" expanded="true" signature="2166:2195" placeholder="SELECT * FRO..missing_value..." />
-            <marker date="1478209783692" expanded="true" signature="2771:2803" placeholder="SELECT pos F..." />
-            <marker date="1478209783692" expanded="true" signature="2887:2911" placeholder="SELECT COUNT..." />
-            <marker date="1478209783692" expanded="true" signature="3805:3837" placeholder="SELECT pos F..." />
-            <marker date="1478209783692" expanded="true" signature="3922:3950" placeholder="DELETE FROM ..." />
+            <element signature="e#969#1276#0" expanded="false" />
+            <element signature="e#1366#2015#0" expanded="false" />
+            <element signature="e#2101#2556#0" expanded="false" />
+            <element signature="e#2706#3707#0" expanded="false" />
+            <element signature="e#3739#4099#0" expanded="false" />
+            <marker date="1478275173369" expanded="true" signature="1048:1192" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1478275173369" expanded="true" signature="1510:1599" placeholder="INSERT INTO ..." />
+            <marker date="1478275173369" expanded="true" signature="1815:1877" placeholder="INSERT INTO ..." />
+            <marker date="1478275173369" expanded="true" signature="2167:2196" placeholder="SELECT * FRO..missing_value..." />
+            <marker date="1478275173369" expanded="true" signature="2772:2804" placeholder="SELECT pos F..." />
+            <marker date="1478275173369" expanded="true" signature="2888:2912" placeholder="SELECT COUNT..." />
+            <marker date="1478275173369" expanded="true" signature="3806:3838" placeholder="SELECT pos F..." />
+            <marker date="1478275173369" expanded="true" signature="3923:3951" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -900,19 +885,19 @@
           <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
           <folding>
             <element signature="e#0#75#0" expanded="true" />
-            <element signature="e#968#1275#0" expanded="false" />
-            <element signature="e#1365#2014#0" expanded="false" />
-            <element signature="e#2100#2555#0" expanded="false" />
-            <element signature="e#2705#3706#0" expanded="false" />
-            <element signature="e#3738#4098#0" expanded="false" />
-            <marker date="1478209783692" expanded="true" signature="1047:1191" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1478209783692" expanded="true" signature="1509:1598" placeholder="INSERT INTO ..." />
-            <marker date="1478209783692" expanded="true" signature="1814:1876" placeholder="INSERT INTO ..." />
-            <marker date="1478209783692" expanded="true" signature="2166:2195" placeholder="SELECT * FRO..missing_value..." />
-            <marker date="1478209783692" expanded="true" signature="2771:2803" placeholder="SELECT pos F..." />
-            <marker date="1478209783692" expanded="true" signature="2887:2911" placeholder="SELECT COUNT..." />
-            <marker date="1478209783692" expanded="true" signature="3805:3837" placeholder="SELECT pos F..." />
-            <marker date="1478209783692" expanded="true" signature="3922:3950" placeholder="DELETE FROM ..." />
+            <element signature="e#969#1276#0" expanded="false" />
+            <element signature="e#1366#2015#0" expanded="false" />
+            <element signature="e#2101#2556#0" expanded="false" />
+            <element signature="e#2706#3707#0" expanded="false" />
+            <element signature="e#3739#4099#0" expanded="false" />
+            <marker date="1478275173369" expanded="true" signature="1048:1192" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1478275173369" expanded="true" signature="1510:1599" placeholder="INSERT INTO ..." />
+            <marker date="1478275173369" expanded="true" signature="1815:1877" placeholder="INSERT INTO ..." />
+            <marker date="1478275173369" expanded="true" signature="2167:2196" placeholder="SELECT * FRO..missing_value..." />
+            <marker date="1478275173369" expanded="true" signature="2772:2804" placeholder="SELECT pos F..." />
+            <marker date="1478275173369" expanded="true" signature="2888:2912" placeholder="SELECT COUNT..." />
+            <marker date="1478275173369" expanded="true" signature="3806:3838" placeholder="SELECT pos F..." />
+            <marker date="1478275173369" expanded="true" signature="3923:3951" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -952,19 +937,19 @@
           <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
           <folding>
             <element signature="e#0#75#0" expanded="true" />
-            <element signature="e#968#1275#0" expanded="false" />
-            <element signature="e#1365#2014#0" expanded="false" />
-            <element signature="e#2100#2555#0" expanded="false" />
-            <element signature="e#2705#3706#0" expanded="false" />
-            <element signature="e#3738#4098#0" expanded="false" />
-            <marker date="1478209783692" expanded="true" signature="1047:1191" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1478209783692" expanded="true" signature="1509:1598" placeholder="INSERT INTO ..." />
-            <marker date="1478209783692" expanded="true" signature="1814:1876" placeholder="INSERT INTO ..." />
-            <marker date="1478209783692" expanded="true" signature="2166:2195" placeholder="SELECT * FRO..missing_value..." />
-            <marker date="1478209783692" expanded="true" signature="2771:2803" placeholder="SELECT pos F..." />
-            <marker date="1478209783692" expanded="true" signature="2887:2911" placeholder="SELECT COUNT..." />
-            <marker date="1478209783692" expanded="true" signature="3805:3837" placeholder="SELECT pos F..." />
-            <marker date="1478209783692" expanded="true" signature="3922:3950" placeholder="DELETE FROM ..." />
+            <element signature="e#969#1276#0" expanded="false" />
+            <element signature="e#1366#2015#0" expanded="false" />
+            <element signature="e#2101#2556#0" expanded="false" />
+            <element signature="e#2706#3707#0" expanded="false" />
+            <element signature="e#3739#4099#0" expanded="false" />
+            <marker date="1478275173369" expanded="true" signature="1048:1192" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1478275173369" expanded="true" signature="1510:1599" placeholder="INSERT INTO ..." />
+            <marker date="1478275173369" expanded="true" signature="1815:1877" placeholder="INSERT INTO ..." />
+            <marker date="1478275173369" expanded="true" signature="2167:2196" placeholder="SELECT * FRO..missing_value..." />
+            <marker date="1478275173369" expanded="true" signature="2772:2804" placeholder="SELECT pos F..." />
+            <marker date="1478275173369" expanded="true" signature="2888:2912" placeholder="SELECT COUNT..." />
+            <marker date="1478275173369" expanded="true" signature="3806:3838" placeholder="SELECT pos F..." />
+            <marker date="1478275173369" expanded="true" signature="3923:3951" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -976,60 +961,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1748" max-vertical-offset="2193">
-          <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="239" max-vertical-offset="1190">
-          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.027070064" vertical-offset="4845" max-vertical-offset="7106">
-          <caret line="286" column="1" selection-start-line="286" selection-start-column="1" selection-end-line="286" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="1938">
-          <caret line="140" column="0" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#75#0" expanded="true" />
-            <element signature="e#968#1275#0" expanded="false" />
-            <element signature="e#1365#2014#0" expanded="false" />
-            <element signature="e#2100#2555#0" expanded="false" />
-            <element signature="e#2705#3706#0" expanded="false" />
-            <element signature="e#3738#4098#0" expanded="false" />
-            <marker date="1478209783692" expanded="true" signature="1047:1191" placeholder="CREATE TABLE..missing_value..." />
-            <marker date="1478209783692" expanded="true" signature="1509:1598" placeholder="INSERT INTO ..." />
-            <marker date="1478209783692" expanded="true" signature="1814:1876" placeholder="INSERT INTO ..." />
-            <marker date="1478209783692" expanded="true" signature="2166:2195" placeholder="SELECT * FRO..missing_value..." />
-            <marker date="1478209783692" expanded="true" signature="2771:2803" placeholder="SELECT pos F..." />
-            <marker date="1478209783692" expanded="true" signature="2887:2911" placeholder="SELECT COUNT..." />
-            <marker date="1478209783692" expanded="true" signature="3805:3837" placeholder="SELECT pos F..." />
-            <marker date="1478209783692" expanded="true" signature="3922:3950" placeholder="DELETE FROM ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/player.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075" vertical-offset="357" max-vertical-offset="1326">
-          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/remote.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.8846154" vertical-offset="357" max-vertical-offset="1003">
@@ -1038,10 +969,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.411765" vertical-offset="598" max-vertical-offset="2227">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.029412" vertical-offset="3824" max-vertical-offset="5933">
+          <caret line="315" column="0" selection-start-line="315" selection-start-column="0" selection-end-line="315" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#getPlaylist#0" expanded="false" />
+            <element signature="n#!!block;n#getOutput#0" expanded="false" />
+            <element signature="n#!!block;n#update#0" expanded="false" />
+            <element signature="e#9121#9552#0" expanded="false" />
+            <element signature="e#9606#9971#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/remoteScript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46082088" vertical-offset="348" max-vertical-offset="884">
-          <caret line="233" column="0" selection-start-line="233" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.8208956" vertical-offset="435" max-vertical-offset="3179">
+          <caret line="259" column="0" selection-start-line="259" selection-start-column="0" selection-end-line="259" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#skipVideo#0" expanded="false" />
             <element signature="n#!!block;n#search#0" expanded="false" />
@@ -1049,10 +1002,47 @@
             <element signature="n#!!block;n#convertTime#0" expanded="false" />
             <element signature="n#!!block;n#getPlaylistPlayer#0" expanded="false" />
             <element signature="n#!!block;n#getPlaylist#0" expanded="false" />
-            <element signature="n#!!block;n#displayPlaylist#0" expanded="false" />
             <element signature="n#!!block;n#getOutput#0" expanded="false" />
             <element signature="n#!!block;n#update#0" expanded="false" />
-            <element signature="e#7188#10689#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/player.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.8461537" vertical-offset="418" max-vertical-offset="1326">
+          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.0" vertical-offset="528" max-vertical-offset="1190">
+          <caret line="54" column="43" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6826004" vertical-offset="663" max-vertical-offset="1938">
+          <caret line="130" column="42" selection-start-line="130" selection-start-column="42" selection-end-line="130" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#75#0" expanded="true" />
+            <element signature="e#969#1276#0" expanded="false" />
+            <element signature="e#1366#2015#0" expanded="false" />
+            <element signature="e#2101#2556#0" expanded="false" />
+            <element signature="e#2706#3707#0" expanded="false" />
+            <element signature="e#3739#4099#0" expanded="false" />
+            <marker date="1478275173369" expanded="true" signature="1048:1192" placeholder="CREATE TABLE..missing_value..." />
+            <marker date="1478275173369" expanded="true" signature="1510:1599" placeholder="INSERT INTO ..." />
+            <marker date="1478275173369" expanded="true" signature="1815:1877" placeholder="INSERT INTO ..." />
+            <marker date="1478275173369" expanded="true" signature="2167:2196" placeholder="SELECT * FRO..missing_value..." />
+            <marker date="1478275173369" expanded="true" signature="2772:2804" placeholder="SELECT pos F..." />
+            <marker date="1478275173369" expanded="true" signature="2888:2912" placeholder="SELECT COUNT..." />
+            <marker date="1478275173369" expanded="true" signature="3806:3838" placeholder="SELECT pos F..." />
+            <marker date="1478275173369" expanded="true" signature="3923:3951" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>

@@ -17,7 +17,7 @@ class createForm(Form):
     createButton = SubmitField()
 
 class remoteForm(Form):
-    jukeName = StringField('jukeName', validators=[DataRequired(message="You have to name your jukebox"), Regexp('^[a-zA-Z]*$',message="Only letters are allowed, no space allowed")])
+    jukeName2 = StringField('jukeName', validators=[DataRequired(message="You have to name your jukebox"), Regexp('^[a-zA-Z]*$',message="Only letters are allowed, no space allowed")])
     remoteButton = SubmitField()
 
 def create_juketable(tablename):
@@ -128,7 +128,7 @@ def index():
             return render_template("player.html", jukename=jukename)
 
     if formRemote.remoteButton.data and formRemote.validate_on_submit():
-        jukename = request.form["jukeName"].lower()
+        jukename = request.form["jukeName2"].lower()
         if(create_juketable(jukename)!=False):
             flash("We couldn't find this jukebox")
             return render_template("index.html", formCreatePlaylist=formCreatePlaylist, formRemote=formRemote)

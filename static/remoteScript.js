@@ -45,7 +45,7 @@ function search() {
         "https://www.googleapis.com/youtube/v3/search", {
             part: 'snippet, id',
             q: q,
-            maxResults: 10,
+            maxResults: 20,
             type: 'video',
             videoCategoryId: 10,
             key: 'AIzaSyAyCS7wxWvJB3sG5Qmd2MOpB9J50v-NLaY'
@@ -174,9 +174,9 @@ function displayPlaylist(item,i){
     var dbid = item.id;
 
     if (i == cursor) {
-        var liTag = '<li class = "list-group-item active" video-id= ' + videoId + ' dbId=' + dbid + '>';
+        var liTag = '<li class = "list-group-item active" video-id= ' + videoId + ' dbId=' + dbid +'index='+i+'>';
     }else{
-        var liTag = '<li class = "list-group-item" video-id= ' + videoId + ' dbId=' + dbid + '>'
+        var liTag = '<li class = "list-group-item" video-id= ' + videoId + ' dbId=' + dbid +'index='+i+'>'
     }
 
 
@@ -198,7 +198,7 @@ function getOutput(item){
 
     var output = '<li class = "search-list" type="button" video-id= '+ videoId +' video-title= '+'"'+title+'"'+' video-duration= '+duration+'>' +
 				'<div class ="list-right">' +
-				'<h4>'+title+'</h4>' +
+				'<h5>'+title+'</h5>' +
                 '<p>'+duration+'</p>' +
                 '<div id="buttonsResult" class="buttonsContainer">' +
 				'</div>' +
@@ -257,7 +257,6 @@ $(document).ready(function(){
         getPlaylist();
     });
 
-
     $('#playlist').on("click",'#moveDown',function() {
         var juke = $("#jukename").text();
         var id = $(this).attr("dbId");
@@ -280,6 +279,7 @@ $(document).ready(function(){
         if(cursor+1==$('#containerPlaylist ul li').length){
             cursor--;
         }
+
         $.post("/delete",{jukename: juke, id: id},function(data){});
         getPlaylist();
     })
