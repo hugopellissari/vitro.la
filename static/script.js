@@ -197,6 +197,7 @@ function getPlaylist(){
             var juke = $("#jukename").text();
             $.post("/showPlaylist",{jukename: juke},
                 function(data){
+                    console.log(data);
                     $('#playlist').empty();
                     for (var i = 0; i < data.length; i++) {
                         if (data.length > 0) {
@@ -266,6 +267,14 @@ function getOutput(item){
 
 }
 
+function updateProgressBar(){
+    // Update the value of our progress bar accordingly.
+    var q = ((player.getCurrentTime()/player.getDuration())*100);
+    var prog = q.toString()+"%";
+    $('.progress-bar').css("width",prog);
+}
+
+
 function update(){
     var playSize = $('#containerPlaylist ul li').length;
     if(playSize==1 && flag==0){
@@ -275,7 +284,6 @@ function update(){
         });
     }
     if(player.getPlayerState()==0  && playSize>=1){
-
         if(automaticMode==1 && (playSize)==(cursor+1) && flagAutoAdded==0){
             flagAutoAdded=1;
             searchRelatedVideos(player.getVideoData()['video_id']);
@@ -283,9 +291,12 @@ function update(){
          skipVideo(1);
     }
     getPlaylist();
-                console.log(player.getPlayerState());
+
+    updateProgressBar();
 
 }
+
+
 
 $(document).ready(function(){
     getPlaylist();
@@ -366,10 +377,17 @@ $(document).ready(function(){
         player.pauseVideo();
     });
 
-    //terminar isso aqui
-    $('.panel-heading').on("click",'#autoButton',function(){
-        $('#autoButton').toggleClass("active");
-    });
+    $("[name='autoSwitch']").bootstrapSwitch('size', 'mini');
+
+
+    $('input[name="autoSwitch"]').on('switchChange.bootstrapSwitch', function(event, state) {
+        if(automaticMode==1){
+             automaticMode=0;
+        }else{
+            automaticMode=1;
+        }
+     });
+
 
     $("#query").autocomplete({
         source: function(request, response) {

@@ -15,6 +15,47 @@ $(function() {
     });
 });
 
+var player;
+
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('playerContainer', {
+        width: '100%',
+        height: '100%',
+        videoId: '',
+        enablejsapi:1,
+        playerVars: {
+            color: 'white'
+        },
+        events: {
+            onReady: onPlayerReady,
+            onStateChange: onPlayerStateChange
+        }
+    });
+}
+
+function onPlayerReady(){
+    cursor=0;
+    getPlaylistPlayer(function(results){
+        if(results.length>0){
+            player.loadVideoById(results[0].videoid);
+            flag=1;
+        }
+    });
+}
+
+function onPlayerStateChange(event){
+
+    if(event.data == YT.PlayerState.ENDED){
+        skipVideo(1);
+        getPlaylist();
+        flagAutoAdded=0;
+    }
+
+    if(event.data == YT.PlayerState.ENDED && $('#containerPlaylist ul li').length == 0){
+        flag = 0;
+    }
+}
+
 function skipVideo(dir){
     if(dir==0){
         getPlaylistPlayer(function(results){
@@ -218,7 +259,6 @@ function update(){
             flag=1;
         });
     }
-        console.log(flagAutoAdded);
     if(player.getPlayerState()==0 && playSize>=1){
 
         if(automaticMode==1 && (playSize)==(cursor+1) && flagAutoAdded==0){
@@ -255,6 +295,10 @@ $(document).ready(function(){
 
         $.post("/add",{jukename: juke,url: url, videoTitle: vtitle, videoDuration: vduration, location:1, cursor: cursor},function(data){});
         getPlaylist();
+    });
+
+    $('#showPlayer').on("click",function(){
+        player.stopVideo();
     });
 
     $('#playlist').on("click",'#moveDown',function() {

@@ -120,7 +120,11 @@ a{
     height:30px;
 }
 
+#autoSwitch{
+    float: right; !important
+    display: inline;
+}
 
-#autoButton{
-
+.progress {
+    height: 5px; !important
 }

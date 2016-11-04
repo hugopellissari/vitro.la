@@ -28,6 +28,30 @@
         <div class="row-fluid">
             <div class="col-sm-8  container-fluid">
 
+
+                 <button id="showPlayer" data-target="#playerCollapse" type="button" class="btn btn-primary" data-toggle="collapse">Show/hide player</button>
+
+                 <div id="playerCollapse" class="collapse">
+
+                    <div id="videocontainer" class="embed-responsive embed-responsive-16by9">
+                        <div id="playerContainer" class="playerContainer"></div>
+                    </div>
+
+
+                     <div id="playbackControl" class="panel panel-default">
+                         <div id="playback-wrapper">
+                            <i id="skipPrevious" class = "material-icons" style="font-size:36px;">skip_previous</i>
+                            <i id="play" class = "material-icons" style="font-size:40px;">play_arrow</i>
+                            <i id="pause" class = "material-icons" style="font-size:40px;">pause</i>
+                            <i id="skipNext" class = "material-icons"style="font-size:36px;">skip_next</i>
+                         </div>
+                     </div>
+
+
+                 </div>
+
+
+
                    <div id="containerPlaylist" class = "panel panel-default">
                        <div class="panel-heading">Playlist
                        </div>

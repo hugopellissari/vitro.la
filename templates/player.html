@@ -3,6 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="static/style.css">
+        <link href="static/bootstrap-switch.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" type="text/css" />
@@ -10,6 +11,7 @@
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://www.youtube.com/iframe_api"></script>
+        <script src="static/bootstrap-switch.min.js"></script>
         <script src="static/script.js"></script>
     </head>
 
@@ -27,13 +29,20 @@
         <div class="row-fluid">
             <div class="col-sm-8  container-fluid">
 
-
-                <div id="videocontainer" class="embed-responsive embed-responsive-16by9">
-                    <div id="playerContainer" class="playerContainer"></div>
+                <button id="showPlayer" data-target="#playerCollapse" type="button" class="btn btn-primary" data-toggle="collapse">Show/hide player</button>
+                <div id="playerCollapse" class="collapse in">
+                    <div id="videocontainer" class="embed-responsive embed-responsive-16by9">
+                        <div id="playerContainer" class="playerContainer"></div>
+                    </div>
                 </div>
 
-
                  <div id="playbackControl" class="panel panel-default">
+                         <div class="progress">
+                             <div class="progress-bar" style="width: 0%;">
+                                 <span class="sr-only">60% Complete</span>
+                             </div>
+                         </div>
+
                      <div id="playback-wrapper">
                          <i id="skipPrevious" class = "material-icons" style="font-size:36px;">skip_previous</i>
                          <i id="play" class = "material-icons" style="font-size:40px;">play_arrow</i>
@@ -42,11 +51,15 @@
                      </div>
                  </div>
 
+
                   <div id="containerPlaylist" class = "panel panel-default">
                        <div class="panel-heading">Playlist
-                       <button id="autoButton" type="button" class="btn btn-primary active" data-toggle="button" aria-pressed="true" autocomplete="off">Automatic Mode</button>
+                       <form id="autoSwitch">Auto
+                       <input type="checkbox" name="autoSwitch" checked>
+                       </form>
                        </div>
-                       <ul id="playlist" class="list-group"></ul>
+                       <ul id="playlist" class="list-group">
+                       </ul>
                    </div>
             </div>
 
