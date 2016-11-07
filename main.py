@@ -130,7 +130,7 @@ def index():
     if formRemote.remoteButton.data and formRemote.validate_on_submit():
         jukename = request.form["jukeName2"].lower()
         if(create_juketable(jukename)!=False):
-            flash("We couldn't find this jukebox")
+            flash("We couldn't find this jukebox. Maybe you should create one")
             return render_template("index.html", formCreatePlaylist=formCreatePlaylist, formRemote=formRemote)
         else:
             return render_template("remote.html", jukename=jukename)

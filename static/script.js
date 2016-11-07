@@ -57,6 +57,11 @@ function onPlayerStateChange(event){
     }
 }
 
+function scrollToAnchor(aid){
+    var aTag = $("a[name='"+ aid +"']");
+    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+}
+
 function skipVideo(dir){
     if(dir==0){
         getPlaylistPlayer(function(results){

@@ -15,6 +15,8 @@ a{
     text-decorations:none;
 }
 
+
+
 #container{
     width:740px;
     background:#fff;
@@ -56,8 +58,14 @@ a{
     cursor:default;
 }
 
+#query{
+    width:100%
+
+}
+
 #search-btn{
     background: transparent;
+    width: 0px;
     border: none !important;
     font-size:0;
 }
@@ -127,4 +135,42 @@ a{
 
 .progress {
     height: 5px; !important
+}
+
+
+
+
+
+
+#headline{
+    margin-bottom: 25px;
+}
+
+#showCreate{
+    width:130px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#showJoin{
+    width:130px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#buttonContainer{
+    text-align: center;
+}
+.indexField{
+    text-align:center;
+    margin-top:20px;
+}
+
+#indexNav{
+    margin-bottom: 0px;
+}
+
+.jumbotron {
+    padding-bottom: 60px;
+
 }
