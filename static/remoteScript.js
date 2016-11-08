@@ -255,7 +255,7 @@ function update(){
     var playSize = $('#containerPlaylist ul li').length;
     if(playSize==1 && flag==0){
         getPlaylistPlayer(function(results){
-            player.loadVideoById(results[0].videoid);
+            player.cueVideoById(results[0].videoid);
             flag=1;
         });
     }

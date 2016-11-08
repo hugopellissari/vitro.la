@@ -4,10 +4,11 @@
 }
 
 body{
-    font-family: proxima-nova, sans-serif;
+    font-family: Lato, sans-serif;
     line-height:1.6em;
-    color:#666;
+    color: #2d2d2d;
     font-size:14px;
+    background-color: #3498db;
 }
 
 a{
@@ -15,7 +16,68 @@ a{
     text-decorations:none;
 }
 
+h1{
+    color:#ecf0f1;
+    font-weight:300;
+}
 
+h2{
+    color:#ecf0f1;
+    font-weight:300;
+}
+
+h3{
+    color:#ecf0f1;
+    font-weight:300;
+}
+
+.input-lg{
+    border:1px solid #bdc3c7
+}
+
+.panel{
+    border-radius:8px;
+    background-color:#edeff1;
+}
+
+.navbar-default{
+    background-color: #2980b9;
+    border-color: #1177ba;
+}
+
+
+.material-icons:hover{
+    font-size:45px
+}
+
+.material-icons{
+    font-size:38px;
+    cursor:default;
+}
+
+
+#autoSwitch{
+    float: right; !important
+    display: inline;
+}
+
+.progress {
+    height: 5px;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    margin-top: 4px;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+.progress-bar{
+    height: 5px;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    margin-top: 4px;
+    margin-left:5px;
+    margin-right:5px;
+}
 
 #container{
     width:740px;
@@ -50,12 +112,6 @@ a{
 .list-right{
 	float:right;
 	width:90%;
-}
-
-
-
-.material-icons{
-    cursor:default;
 }
 
 #query{
@@ -128,19 +184,6 @@ a{
     height:30px;
 }
 
-#autoSwitch{
-    float: right; !important
-    display: inline;
-}
-
-.progress {
-    height: 5px; !important
-}
-
-
-
-
-
 
 #headline{
     margin-bottom: 25px;
@@ -163,14 +206,27 @@ a{
 }
 .indexField{
     text-align:center;
-    margin-top:20px;
+    margin-top: 8px;
+    margin-bottom: 10px;
 }
 
 #indexNav{
     margin-bottom: 0px;
 }
 
-.jumbotron {
-    padding-bottom: 60px;
+.indexButton{
+    width: 260px;
+    margin-top: 8px;
+}
 
+#indexField{
+    width: 260px;
+}
+
+#indexContainer{
+    width: 300px;
+    text-aling: center;
+    position: fixed;
+    left: 50%;
+    margin-left: -150px;
 }

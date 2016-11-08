@@ -3,7 +3,7 @@ var flag=0;
 var flagAutoAdded=1; //quando video para e musica auto é adicionada, flag==1. Volta a zero quando video muda de estado para ENDED
 var automaticMode=1;
 var suggestCallBack;
-
+var player;
 
 
 $(function(){
@@ -15,8 +15,6 @@ $(function(){
     });
 
 });
-
-var player;
 
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('playerContainer', {
@@ -55,11 +53,6 @@ function onPlayerStateChange(event){
     if(event.data == YT.PlayerState.ENDED && $('#containerPlaylist ul li').length == 0){
         flag = 0;
     }
-}
-
-function scrollToAnchor(aid){
-    var aTag = $("a[name='"+ aid +"']");
-    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
 }
 
 function skipVideo(dir){
@@ -114,7 +107,6 @@ function search() {
                         }
                     });
             }
-
         });
 
 }
@@ -317,6 +309,7 @@ $(document).ready(function(){
 
         $.post("/add",{jukename: juke,url: url, videoTitle: vtitle, videoDuration: vduration, location:vlocation, cursor: vcursor},function(data){});
         getPlaylist();
+
     });
 
     $('#results').on("click",'.addNext',function(){
@@ -335,6 +328,7 @@ $(document).ready(function(){
         $.post("/reorder",{jukename: juke, id: id, direction:0},function(data){});
         cursor--;
         getPlaylist();
+
     });
 
     $('#playlist').on("click",'#moveUp',function() {
