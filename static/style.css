@@ -8,7 +8,7 @@ body{
     line-height:1.6em;
     color: #2d2d2d;
     font-size:14px;
-    background-color: #3498db;
+    background-color: #0d5e93;
 }
 
 a{
@@ -37,13 +37,14 @@ h3{
 
 .panel{
     border-radius:8px;
-    background-color:#edeff1;
+    background-color:#34495ee6;
 }
 
 .navbar-default{
     background-color: #2980b9;
     border-color: #1177ba;
 }
+
 
 
 .material-icons:hover{
@@ -87,7 +88,7 @@ h3{
 
 #results li{
 	padding:10px 0;
-	border-bottom:1px #ccc dotted;
+    border-bottom: 1px #2c3e50 solid;
 	list-style:none;
 	overflow:auto;
 }
@@ -95,7 +96,6 @@ h3{
 #results li p{
     overflow: hidden;
     text-overflow: ellipsis;
-
 }
 
 .list-left{
@@ -115,8 +115,9 @@ h3{
 }
 
 #query{
-    width:100%
-
+    width:100%;
+    background-color: #2c3e50;
+    border-color: #2c3e50;
 }
 
 #search-btn{
@@ -130,6 +131,11 @@ h3{
     background: #cccccc;
  }
 
+.playerPanel{
+    background-color: #34495e;
+    border-color: #2c3e50;
+    color: #ecf0f1;
+}
 
 #playlist li p,i {
     display: inline;
@@ -139,6 +145,26 @@ h3{
 }
 #playlist li{
     overflow: hidden;
+	list-style:none;
+}
+
+.list-group-item{
+    border: 0px;
+    border-bottom: 1px #2c3e50 solid;
+    margin-bottom: 0px;
+    background-color: #34495e;
+}
+
+.list-group-item.active{
+    background-color: #2c3e50;
+    border: 0px #2c3e50 solid;
+}
+
+
+.panel-default.playerPanel> .panel-heading.playerPanel{
+    background-color: #34495e;
+    border-color: #2c3e50;
+    color: #ecf0f1;
 }
 
 #songTitle{
@@ -176,12 +202,13 @@ h3{
   display: inline-block;
 }
 
+
 .ui-menu-item{
-    font-size:16px;
+    font-size:17px;
 }
 
 .ui-menu-item .ui-menu-item-wrapper{
-    height:30px;
+    height:35px;
 }
 
 
@@ -217,6 +244,7 @@ h3{
 .indexButton{
     width: 260px;
     margin-top: 8px;
+    background-color: #2980b9;
 }
 
 #indexField{
@@ -229,4 +257,16 @@ h3{
     position: fixed;
     left: 50%;
     margin-left: -150px;
+}
+
+.indexPararaph{
+    text-align: center;
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.indexPanel{
+    background-color:#edeff1;
+
 }

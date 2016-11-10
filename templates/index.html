@@ -44,7 +44,7 @@
                     </div>
 
 
-       <div class="panel panel-default" id="indexContainer">
+       <div class="panel panel-default indexPanel" id="indexContainer">
                     <div id="buttonContainer">
 
                          <button data-target="#createCollapse" id="showCreate" class="btn btn-primary"  data-parent="#buttonContainer" data-toggle="collapse">Create a jukebox</button>
@@ -54,7 +54,7 @@
 
                     <div id="createCollapse" class="collapse">
 		                <form  class="indexField" action="" method="POST">
-                            <p style="text-align: center;"> Choose a name and you're ready to go </p>
+                            <p class="indexPararaph"> Choose a name and you're ready to go </p>
 		                    {{ formCreatePlaylist.hidden_tag() }}
                             {{ formCreatePlaylist.jukeName(class="input-lg", id="indexField") }} </br>
                             {{ formCreatePlaylist.createButton(class="btn btn-primary indexButton") }}
@@ -64,7 +64,7 @@
 
                      <div id="joinCollapse" class="collapse">
 		                <form class="indexField" action="" method="POST">
-                     	    <p style="text-align: center;"> Just type the jukebox's name and add songs to it from your device</p>
+                     	    <p class="indexPararaph""> Just type the jukebox's name and add songs to it from your device</p>
                             {{ formRemote.hidden_tag() }}
                             {{ formRemote.jukeName2(class="input-lg", id="indexField") }} </br>
                             {{ formRemote.remoteButton(class="btn btn-primary indexButton") }}

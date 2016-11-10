@@ -274,6 +274,7 @@ function update(){
 $(document).ready(function(){
     getPlaylist();
 
+     $("[name='showPlayer']").bootstrapSwitch('size', 'mini');
 
     $('#results').on("click",'.search-list',function(){
         var juke = $("#jukename").text();
@@ -381,11 +382,11 @@ $(document).ready(function(){
         }
     });
 
-
+/*
   setInterval(function(){
     update();
   },1000);
-
+*/
 
 
  });
