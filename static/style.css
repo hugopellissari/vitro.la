@@ -137,6 +137,13 @@ h3{
     color: #ecf0f1;
 }
 
+#playlist{
+    height:300px;
+    overflow-y: auto;
+}
+
+
+
 #playlist li p,i {
     display: inline;
     max-width: 40%

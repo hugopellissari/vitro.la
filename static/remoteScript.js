@@ -5,7 +5,6 @@ var automaticMode=1;
 var suggestCallBack;
 
 
-
 $(function() {
     var searchField = $('#query');
     var icon = $('#search-btn');
@@ -251,6 +250,13 @@ function getOutput(item){
 
 }
 
+function updateProgressBar(){
+    // Update the value of our progress bar accordingly.
+    var q = ((player.getCurrentTime()/player.getDuration())*100);
+    var prog = q.toString()+"%";
+    $('.progress-bar').css("width",prog);
+}
+
 function update(){
     var playSize = $('#containerPlaylist ul li').length;
     if(playSize==1 && flag==0){
@@ -268,13 +274,17 @@ function update(){
          skipVideo(1);
     }
     getPlaylist();
-
+    updateProgressBar();
 }
 
 $(document).ready(function(){
-    getPlaylist();
+     getPlaylist();
 
      $("[name='showPlayer']").bootstrapSwitch('size', 'mini');
+
+
+
+
 
     $('#results').on("click",'.search-list',function(){
         var juke = $("#jukename").text();
@@ -382,11 +392,11 @@ $(document).ready(function(){
         }
     });
 
-/*
+
   setInterval(function(){
     update();
   },1000);
-*/
+
 
 
  });

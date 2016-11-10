@@ -4,7 +4,7 @@ var flagAutoAdded=1; //quando video para e musica auto é adicionada, flag==1. V
 var automaticMode=1;
 var suggestCallBack;
 var player;
-
+var myScroll;
 
 $(function(){
     var searchField = $('#query');
