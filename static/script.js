@@ -35,6 +35,7 @@ function onYouTubeIframeAPIReady() {
 function onPlayerReady(){
     cursor=0;
     console.log("player initialized");
+    generateControl();
     getPlaylistPlayer(function(results){
         if(results.length>0){
             player.loadVideoById(results[0].videoid);
@@ -54,6 +55,9 @@ function onPlayerStateChange(event){
     if(event.data == YT.PlayerState.ENDED && $('#containerPlaylist ul li').length == 0){
         flag = 0;
     }
+
+    generateControl();
+
 }
 
 function skipVideo(dir){
@@ -264,66 +268,20 @@ function getOutput(item){
 
 }
 
-function jumpTo(h) {
-    var top = document.getElementById(h).offsetTop,
-        left = document.getElementById(h).offsetLeft;
-    var animator = createAnimator({
-        start: [0,0],
-        end: [left, top],
-        duration: 200
-    }, function(vals){
-    	window.scrollTo(vals[0], vals[1]);
-    });
-
-    //run
-    animator();
-}
-
-function createAnimator(config, callback, done) {
-    if (typeof config !== "object") throw new TypeError("Arguement config expect an Object");
-
-    var start = config.start,
-        mid = $.extend({}, start), //clone object
-        math = $.extend({}, start), //precalculate the math
-        end = config.end,
-        duration = config.duration || 1000,
-        startTime, endTime;
-
-    //t*(b-d)/(a-c) + (a*d-b*c)/(a-c);
-    function precalculate(a, b, c, d) {
-        return [(b - d) / (a - c), (a * d - b * c) / (a - c)];
+function generateControl(){
+    var output;
+    if(player.getPlayerState()==2) {
+         output =     '<i id="skipPrevious" class = "material-icons control">skip_previous</i>' +
+                      '<i id="play" class = "material-icons control" >play_arrow</i>' +
+                      '<i id="skipNext" class = "material-icons control">skip_next</i>'
+    }else{
+         output =      '<i id="skipPrevious" class = "material-icons control">skip_previous</i>' +
+                      '<i id="pause" class = "material-icons control" >pause</i>' +
+                      '<i id="skipNext" class = "material-icons control">skip_next</i>'
     }
-
-    function calculate(key, t) {
-        return t * math[key][0] + math[key][1];
-    }
-
-    function step() {
-        var t = Date.now();
-        var val = end;
-        if (t < endTime) {
-            val = mid;
-            for (var key in mid) {
-                mid[key] = calculate(key, t);
-            }
-            callback(val);
-            requestAnimationFrame(step);
-        } else {
-            callback(val);
-            done && done();
-        }
-    }
-
-    return function () {
-        startTime = Date.now();
-        endTime = startTime + duration;
-
-        for (var key in math) {
-            math[key] = precalculate(startTime, start[key], endTime, end[key]);
-        }
-
-        step();
-    }
+    $('#playback-wrapper').html('');
+    $('#playback-wrapper').append(output);
+    console.log("wejsdfmasmfalskd");
 }
 
 
@@ -362,7 +320,6 @@ function update(){
 $(document).ready(function(){
     getPlaylist();
 
-
     $('#results').on("click",'.search-list',function(){
         var juke = $("#jukename ").text();
         var url = $(this).attr("video-id");
@@ -388,10 +345,8 @@ $(document).ready(function(){
 
     $('#playlist').on("click",".list-group-item",function(e){
         if(e.target !== this) {
-            console.log("did nothing");
             return;
         }else{
-            console.log("magic happened");
             index = $(this).attr("index");
             videoId = $(this).attr("video-id");
             player.loadVideoById(videoId);
