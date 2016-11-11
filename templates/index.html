@@ -69,7 +69,7 @@
 		                <form  class="indexField" action="" method="POST">
                             <p class="indexPararaph"> Choose a name and you're ready to go </p>
 		                    {{ formCreatePlaylist.hidden_tag() }}
-                            {{ formCreatePlaylist.jukeName(class="input-lg", id="indexField",onfocus="hideDiv()",onblur="showDiv()") }} </br>
+                            {{ formCreatePlaylist.jukeName(class="input-lg", id="indexField",autocomplete="off",onfocus="hideDiv()",onblur="showDiv()") }} </br>
                             {{ formCreatePlaylist.createButton(class="btn btn-primary indexButton") }}
                         </form>
                     </div>
@@ -79,7 +79,7 @@
 		                <form class="indexField" action="" method="POST">
                      	    <p class="indexPararaph""> Just type the jukebox's name and add songs to it from your device</p>
                             {{ formRemote.hidden_tag() }}
-                            {{ formRemote.jukeName2(class="input-lg", id="indexField",onfocus="hideDiv()",onblur="showDiv()") }} </br>
+                            {{ formRemote.jukeName2(class="input-lg", id="indexField",autocomplete="off",onfocus="hideDiv()",onblur="showDiv()") }} </br>
                             {{ formRemote.remoteButton(class="btn btn-primary indexButton") }}
                         </form>
                      </div>
