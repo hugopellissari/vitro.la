@@ -107,9 +107,7 @@ function search() {
                         }
                     });
             }
-
         });
-
 }
 
 function searchRelatedVideos(videoId){
@@ -283,9 +281,6 @@ $(document).ready(function(){
      $("[name='showPlayer']").bootstrapSwitch('size', 'mini');
 
 
-
-
-
     $('#results').on("click",'.search-list',function(){
         var juke = $("#jukename").text();
         var url = $(this).attr("video-id");
@@ -358,10 +353,8 @@ $(document).ready(function(){
         player.pauseVideo();
     });
 
-    //terminar isso aqui
-    $('.panel-heading').on("click",'#autoButton',function(){
-        $('#autoButton').toggleClass("active");
-        console.log("clicked");
+    $('#search-form').submit(function() {
+        search();
     });
 
     $("#query").autocomplete({
