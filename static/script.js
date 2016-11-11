@@ -34,6 +34,7 @@ function onYouTubeIframeAPIReady() {
 
 function onPlayerReady(){
     cursor=0;
+    console.log("player initialized");
     getPlaylistPlayer(function(results){
         if(results.length>0){
             player.loadVideoById(results[0].videoid);
@@ -194,7 +195,6 @@ function getPlaylist(){
             var juke = $("#jukename").text();
             $.post("/showPlaylist",{jukename: juke},
                 function(data){
-                    console.log(data);
                     $('#playlist').empty();
                     for (var i = 0; i < data.length; i++) {
                         if (data.length > 0) {
@@ -214,9 +214,9 @@ function displayPlaylist(item,i){
     var dbid = item.id;
 
     if (i == cursor) {
-        var liTag = '<li id="playlistItem" class = "list-group-item active" video-id= ' + videoId + ' dbId=' + dbid +'index='+i+'>';
+        var liTag = '<li id="playlistItem" class = "list-group-item active" video-id= ' + videoId + ' dbId=' + dbid +' index=' +i+'>';
     }else{
-        var liTag = '<li id="playlistItem" class = "list-group-item" video-id= ' + videoId + ' dbId=' + dbid +'index='+i+'>'
+        var liTag = '<li id="playlistItem" class = "list-group-item" video-id= ' + videoId + ' dbId=' + dbid +' index= ' +i+ '>';
     }
 
 
@@ -272,7 +272,6 @@ function jumpTo(h) {
         end: [left, top],
         duration: 200
     }, function(vals){
-        console.log(arguments);
     	window.scrollTo(vals[0], vals[1]);
     });
 
@@ -386,6 +385,22 @@ $(document).ready(function(){
         $.post("/add",{jukename: juke,url: url, videoTitle: vtitle, videoDuration: vduration, location:1, cursor: cursor},function(data){});
         getPlaylist();
     });
+
+    $('#playlist').on("click",".list-group-item",function(e){
+        if(e.target !== this) {
+            console.log("did nothing");
+            return;
+        }else{
+            console.log("magic happened");
+            index = $(this).attr("index");
+            videoId = $(this).attr("video-id");
+            player.loadVideoById(videoId);
+            cursor = index;
+            update();
+        }
+    });
+
+
 
     $('#playlist').on("click",'#moveDown',function() {
         var juke = $("#jukename").text();

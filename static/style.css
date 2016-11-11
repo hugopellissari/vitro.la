@@ -5,9 +5,16 @@
 
 
 @media only screen and (max-width: 320px) {
-   h1{font-size: 24px;}
-   h3{font-size: 16px;}
-
+    h1{
+        font-size: 24px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    #playlist{
+        max-height:200px;
+        overflow-y: auto;
+    }
 }
 
 body{
@@ -135,7 +142,7 @@ h3{
 }
 
 .search-list:hover{
-    background: #cccccc;
+    background: #2c3e50;
  }
 
 .playerPanel{
@@ -143,12 +150,6 @@ h3{
     border-color: #2c3e50;
     color: #ecf0f1;
 }
-
-#playlist{
-    max-height:200px;
-    overflow-y: auto;
-}
-
 
 
 #playlist li p,i {
@@ -169,9 +170,21 @@ h3{
     background-color: #34495e;
 }
 
+.list-group-item:hover{
+    border: 0px;
+    border-bottom: 1px #2c3e50 solid;
+    margin-bottom: 0px;
+    background-color: #2c3e50;
+}
+
 .list-group-item.active{
     background-color: #2c3e50;
     border: 0px #2c3e50 solid;
+}
+
+.list-group-item.active:hover{
+    background-color:#2c3e50;
+    border-color:#2c3e50;
 }
 
 
