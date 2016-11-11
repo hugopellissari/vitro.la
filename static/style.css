@@ -226,10 +226,6 @@ h3{
 }
 
 
-#headline{
-    margin-bottom: 25px;
-}
-
 #showCreate{
     width:130px;
     margin-top: 5px;
@@ -271,6 +267,7 @@ h3{
     position: fixed;
     left: 50%;
     margin-left: -150px;
+    margin-top:25px;
 }
 
 .indexPararaph{

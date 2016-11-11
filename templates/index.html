@@ -14,6 +14,19 @@
                  $('.collapse').not(e.target).removeClass('in');
              })
         });
+
+        function hideDiv(){
+            if(window.innerWidth<350){
+                $('#headline').hide(100);
+            }
+        }
+
+        function showDiv(){
+            if(window.innerWidth<350){
+                $('#headline').show(100);
+            }
+        }
+
         </script>
 
 
@@ -56,7 +69,7 @@
 		                <form  class="indexField" action="" method="POST">
                             <p class="indexPararaph"> Choose a name and you're ready to go </p>
 		                    {{ formCreatePlaylist.hidden_tag() }}
-                            {{ formCreatePlaylist.jukeName(class="input-lg", id="indexField") }} </br>
+                            {{ formCreatePlaylist.jukeName(class="input-lg", id="indexField",onfocus="hideDiv()",onblur="showDiv()") }} </br>
                             {{ formCreatePlaylist.createButton(class="btn btn-primary indexButton") }}
                         </form>
                     </div>
@@ -66,7 +79,7 @@
 		                <form class="indexField" action="" method="POST">
                      	    <p class="indexPararaph""> Just type the jukebox's name and add songs to it from your device</p>
                             {{ formRemote.hidden_tag() }}
-                            {{ formRemote.jukeName2(class="input-lg", id="indexField") }} </br>
+                            {{ formRemote.jukeName2(class="input-lg", id="indexField",onfocus="hideDiv()",onblur="showDiv()") }} </br>
                             {{ formRemote.remoteButton(class="btn btn-primary indexButton") }}
                         </form>
                      </div>

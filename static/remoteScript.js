@@ -110,6 +110,9 @@ function search() {
         });
 }
 
+
+
+
 function searchRelatedVideos(videoId){
     $.get(
         "https://www.googleapis.com/youtube/v3/search", {
@@ -247,6 +250,7 @@ function getOutput(item){
     return output;
 
 }
+
 
 function updateProgressBar(){
     // Update the value of our progress bar accordingly.
