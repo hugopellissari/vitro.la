@@ -65,9 +65,11 @@ function skipVideo(dir){
         getPlaylistPlayer(function(results){
             if(cursor > 0){
                 cursor--;
+                updateCursor();
                 player.loadVideoById(results[cursor].videoid);
             }else{
                 cursor=results.length-1;
+                updateCursor();
                 player.loadVideoById(results[cursor].videoid);
             }
         });
@@ -75,6 +77,7 @@ function skipVideo(dir){
         getPlaylistPlayer(function(results){
             if(results.length > cursor+1){
                 cursor++;
+                updateCursor();
                 player.loadVideoById(results[cursor].videoid);
             }
         });
@@ -284,8 +287,6 @@ function generateControl(){
     console.log("wejsdfmasmfalskd");
 }
 
-
-
 function updateProgressBar(){
     // Update the value of our progress bar accordingly.
     var q = ((player.getCurrentTime()/player.getDuration())*100);
@@ -293,6 +294,24 @@ function updateProgressBar(){
     $('.progress-bar').css("width",prog);
 }
 
+function getCursor(){
+            var juke = $("#jukename").text();
+            $.post("/getCursor",{jukename: juke},
+                function(data){
+                    if(data[0].authFlag==1 && cursor!=data[0].playcursor){
+                        cursor=data[0].playcursor;
+                                getPlaylistPlayer(function(results){
+                                    player.loadVideoById(results[cursor].videoid);
+                                });
+                    }
+                });
+}
+
+function updateCursor(){
+    var juke = $("#jukename").text();
+    var vcursor = cursor;
+    $.post("/updateCursor",{jukename: juke, cursor: vcursor},function(data){});
+}
 
 function update(){
     var playSize = $('#containerPlaylist ul li').length;
@@ -310,9 +329,10 @@ function update(){
          skipVideo(1);
     }
     getPlaylist();
-
     updateProgressBar();
 
+    //updateCursor();
+    getCursor();
 }
 
 
@@ -351,6 +371,7 @@ $(document).ready(function(){
             videoId = $(this).attr("video-id");
             player.loadVideoById(videoId);
             cursor = index;
+            updateCursor();
             update();
         }
     });
@@ -362,6 +383,7 @@ $(document).ready(function(){
         var id = $(this).attr("dbId");
         $.post("/reorder",{jukename: juke, id: id, direction:0},function(data){});
         cursor--;
+        updateCursor();
         getPlaylist();
 
     });
@@ -371,6 +393,7 @@ $(document).ready(function(){
         var id = $(this).attr("dbId");
         $.post("/reorder",{jukename: juke, id: id, direction:1},function(data){});
         cursor++;
+        updateCursor();
         getPlaylist();
     });
 
@@ -380,6 +403,7 @@ $(document).ready(function(){
         if(cursor+1==$('#containerPlaylist ul li').length){
             $.post("/delete",{jukename: juke, id: id},function(data){});
             cursor--;
+            updateCursor();
             flag=0;
             getPlaylist();
         }else{

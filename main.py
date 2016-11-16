@@ -23,8 +23,12 @@ class remoteForm(Form):
 def create_juketable(tablename):
     con = sql.connect(dbPath)
     cur = con.cursor()
+    configTable = tablename+'_config'
     try:
         cur.execute("CREATE TABLE %s (id integer primary key autoincrement, videoid text not null, title text not null, duration text not null, pos integer not null)" % tablename)
+        cur.execute("CREATE TABLE %s (id integer primary key autoincrement, authFlag integer, playcursor integer)" % configTable)
+        query = "INSERT INTO {0} (authFlag, playcursor) VALUES(1,0)".format(configTable)
+        cur.execute(query)
         con.commit()
     except:
         return False
@@ -66,6 +70,32 @@ def get_playlist(tablename):
         objects_list.append(d)
 
     return jsonify(objects_list)
+
+def get_cursor(tablename):
+    con = sql.connect(dbPath)
+    cur = con.cursor()
+    cur.execute("SELECT authFlag, playcursor FROM %s WHERE id=1" % tablename)
+    rows = cur.fetchall()
+    con.commit()
+    con.close()
+
+    objects_list = []
+    for row in rows:
+        d = collections.OrderedDict()
+        d['authFlag'] = row[0]
+        d['playcursor'] = row[1]
+        objects_list.append(d)
+
+    return jsonify(objects_list)
+
+def update_cursor(tablename,vcursor):
+    con = sql.connect(dbPath)
+    cur = con.cursor()
+    cursor = int(vcursor)
+    query = "UPDATE {0} SET playcursor={1} WHERE id=1".format(tablename,cursor)
+    cur.execute(query)
+    con.commit()
+    con.close()
 
 
 #Reordena playlist, parametro "direction" indica se vai para cima ou para baixo sendo 0=desce 1=sobe
@@ -139,6 +169,17 @@ def index():
     flash_errors(formCreatePlaylist)
     return render_template("index.html", formCreatePlaylist=formCreatePlaylist, formRemote=formRemote)
 
+@app.route('/getCursor', methods=['GET', 'POST'])
+def getCursor():
+     tablename = request.form["jukename"]+'_config'
+     return get_cursor(tablename)
+
+@app.route('/updateCursor', methods=['GET', 'POST'])
+def updateCursor():
+    tablename = request.form["jukename"]+'_config'
+    vcursor = request.form["cursor"]
+    update_cursor(tablename, vcursor)
+    return jsonify(result={"status": 200})
 
 @app.route('/add', methods=['POST'])
 def add():

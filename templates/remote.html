@@ -13,7 +13,7 @@
         <script src="https://www.youtube.com/iframe_api"></script>
         <script src="static/bootstrap-switch.min.js"></script>
         <script src="static/remoteScript.js"></script>
-
+        <script src="static/analytics.js"></script>
     </head>
 
 	<body>
@@ -31,24 +31,12 @@
             <div class="col-sm-8  container-fluid">
 
 
-                 <div id="playerCollapse" class="collapse">
-
-                    <div id="videocontainer" class="embed-responsive embed-responsive-16by9">
-                        <div id="playerContainer" class="playerContainer"></div>
-                    </div>
-
-
+                 <div id="playerCollapse" class="collapse in">
                      <div id="playbackControl" class="panel panel-default playerPanel">
-                         <div class="progress">
-                             <div class="progress-bar" style="width: 0%;">
-                                 <span class="sr-only">60% Complete</span>
-                             </div>
-                         </div>
+
 
                          <div id="playback-wrapper">
                             <i id="skipPrevious" class = "material-icons control">skip_previous</i>
-                            <i id="play" class = "material-icons control" >play_arrow</i>
-                            <i id="pause" class = "material-icons control">pause</i>
                             <i id="skipNext" class = "material-icons control">skip_next</i>
                          </div>
                      </div>
@@ -59,9 +47,7 @@
 
 
                    <div id="containerPlaylist" class = "panel panel-default playerPanel">
-                       <div class="panel-heading playerPanel">Playlist
-                       <button id="showPlayer" data-target="#playerCollapse" type="button" class="btn btn-primary" data-toggle="collapse">Show/hide player</button>
-                       </div>
+                       <div class="panel-heading playerPanel">Playlist</div>
                        <ul id="playlist" class="list-group"></ul>
 
                    </div>

@@ -4,7 +4,7 @@
 }
 
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 765px) {
     h1{
         font-size: 24px;
     }
@@ -12,10 +12,12 @@
         font-size: 16px;
     }
     #playlist{
-        max-height:200px;
+        max-height: 40vh;
         overflow-y: auto;
     }
 }
+
+
 
 body{
     font-family: Lato, sans-serif;
@@ -55,15 +57,12 @@ h3{
 }
 
 .navbar-default{
-    background-color: #2980b9;
-    border-color: #1177ba;
+    background-color: #0d5e93;
+    border-color: #0d5e93;
 }
 
 
 
-.control:hover{
-    font-size:40px
-}
 
 .control{
     font-size:38px;

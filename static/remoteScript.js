@@ -60,9 +60,11 @@ function skipVideo(dir){
         getPlaylistPlayer(function(results){
             if(cursor > 0){
                 cursor--;
+                updateCursor();
                 player.loadVideoById(results[cursor].videoid);
             }else{
                 cursor=results.length-1;
+                updateCursor();
                 player.loadVideoById(results[cursor].videoid);
             }
         });
@@ -70,6 +72,7 @@ function skipVideo(dir){
         getPlaylistPlayer(function(results){
             if(results.length > cursor+1){
                 cursor++;
+                updateCursor();
                 player.loadVideoById(results[cursor].videoid);
             }
         });
@@ -251,6 +254,11 @@ function getOutput(item){
 
 }
 
+function updateCursor(){
+    var juke = $("#jukename").text();
+    var vcursor = cursor;
+    $.post("/updateCursor",{jukename: juke, cursor: vcursor},function(data){});
+}
 
 function updateProgressBar(){
     // Update the value of our progress bar accordingly.
@@ -259,29 +267,24 @@ function updateProgressBar(){
     $('.progress-bar').css("width",prog);
 }
 
-function update(){
-    var playSize = $('#containerPlaylist ul li').length;
-    if(playSize==1 && flag==0){
-        getPlaylistPlayer(function(results){
-            player.cueVideoById(results[0].videoid);
-            flag=1;
-        });
-    }
-    if(player.getPlayerState()==0 && playSize>=1){
+function getCursor(){
+            var juke = $("#jukename").text();
+            $.post("/getCursor",{jukename: juke},
+                function(data){
+                    cursor=data[0].playcursor;
+                    console.log(data);
+                });
+}
 
-        if(automaticMode==1 && (playSize)==(cursor+1) && flagAutoAdded==0){
-            flagAutoAdded=1;
-            searchRelatedVideos(player.getVideoData()['video_id']);
-        }
-         skipVideo(1);
-    }
+function update(){
+    getCursor();
     getPlaylist();
     updateProgressBar();
 }
 
 $(document).ready(function(){
-     getPlaylist();
-
+    getPlaylist();
+    getCursor();
      $("[name='showPlayer']").bootstrapSwitch('size', 'mini');
 
 

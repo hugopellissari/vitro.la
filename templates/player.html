@@ -12,10 +12,14 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="static/bootstrap-switch.min.js"></script>
         <script src="static/script.js"></script>
+        <script src="static/analytics.js"></script>
         <script src="https://www.youtube.com/iframe_api"></script>
     </head>
 
 	<body>
+
+	    <title>Vitrola - Create a playlist, let everybody add</title>
+	    <meta name=”description” content=”Description of page” />
 
         <nav class="navbar navbar-default">
             <div class="container-fluid">
@@ -29,7 +33,7 @@
         <div class="row-fluid">
             <div class="col-sm-8  container-fluid">
 
-                     <button id="showPlayer" data-target="#playerCollapse" type="button" class="btn btn-primary" data-toggle="collapse">Show/hide player</button>
+
                 <div id="playerCollapse" class="collapse in">
                     <div id="videocontainer" class="embed-responsive embed-responsive-16by9">
                         <div id="playerContainer" class="playerContainer"></div>
@@ -39,6 +43,7 @@
                      <div class="progress">
                          <div class="progress-bar" style="width: 0%;"></div>
                      </div>
+                     <button id="showPlayer" data-target="#playerCollapse" type="button" class="btn btn-primary" data-toggle="collapse"></button>
                      <div id="playback-wrapper"></div>
 
                  </div>
