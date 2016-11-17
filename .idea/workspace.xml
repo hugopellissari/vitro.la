@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03a57496-0155-4e29-885c-29c413ea012a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/analytics.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jukebox.db" afterPath="$PROJECT_DIR$/jukebox.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/player.html" afterPath="$PROJECT_DIR$/templates/player.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/remote.html" afterPath="$PROJECT_DIR$/templates/remote.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/remoteScript.js" afterPath="$PROJECT_DIR$/static/remoteScript.js" />
@@ -28,7 +26,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/jk-deploy$jk_deploy.coverage" NAME="jk-deploy Coverage Results" MODIFIED="1479333693972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/jk-deploy$jk_deploy.coverage" NAME="jk-deploy Coverage Results" MODIFIED="1479402248141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -45,19 +43,15 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1938">
-              <caret line="29" column="66" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
+            <state vertical-scroll-proportion="-8.735294" vertical-offset="808" max-vertical-offset="2771">
+              <caret line="78" column="16" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
               <folding>
                 <element signature="e#0#75#0" expanded="true" />
                 <element signature="e#1650#2299#0" expanded="false" />
-                <element signature="e#2385#2840#0" expanded="false" />
                 <element signature="e#3673#4674#0" expanded="false" />
                 <element signature="e#4706#5066#0" expanded="false" />
                 <element signature="e#5096#5231#0" expanded="false" />
-                <element signature="e#5292#6485#0" expanded="false" />
                 <element signature="e#6936#7305#0" expanded="false" />
-                <element signature="e#7378#7449#0" expanded="false" />
-                <element signature="e#7511#7707#0" expanded="false" />
                 <element signature="e#7766#7897#0" expanded="false" />
                 <marker date="1479332270235" expanded="true" signature="1086:1230" placeholder="CREATE TABLE..missing_value..." />
                 <marker date="1479332270235" expanded="true" signature="1266:1280" placeholder="CREATE TABLE..missing_valueS..." />
@@ -77,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.153846" vertical-offset="918" max-vertical-offset="1700">
-              <caret line="68" column="62" selection-start-line="68" selection-start-column="62" selection-end-line="68" selection-end-column="62" />
+            <state vertical-scroll-proportion="0.52307695" vertical-offset="816" max-vertical-offset="1768">
+              <caret line="60" column="105" selection-start-line="60" selection-start-column="105" selection-end-line="60" selection-end-column="105" />
               <folding />
             </state>
           </provider>
@@ -90,16 +84,13 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.6470587" vertical-offset="2290" max-vertical-offset="5984">
-              <caret line="296" column="21" selection-start-line="296" selection-start-column="21" selection-end-line="296" selection-end-column="21" />
+            <state vertical-scroll-proportion="-6.3235292" vertical-offset="2318" max-vertical-offset="6987">
+              <caret line="222" column="4" selection-start-line="222" selection-start-column="4" selection-end-line="222" selection-end-column="4" />
               <folding>
                 <element signature="n#!!block;n#search#0" expanded="false" />
                 <element signature="n#!!block;n#convertTime#0" expanded="false" />
                 <element signature="n#!!block;n#getPlaylistPlayer#0" expanded="false" />
-                <element signature="n#!!block;n#getPlaylist#0" expanded="false" />
-                <element signature="n#!!block;n#displayPlaylist#0" expanded="false" />
                 <element signature="n#!!block;n#getOutput#0" expanded="false" />
-                <element signature="n#!!block;n#generateControl#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -108,9 +99,12 @@
       <file leaf-file-name="player.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/player.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.5" vertical-offset="153" max-vertical-offset="1479">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="-1.4230769" vertical-offset="303" max-vertical-offset="1598">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="160" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,8 +112,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4557" max-vertical-offset="5185">
-              <caret line="260" column="6" selection-start-line="260" selection-start-column="1" selection-end-line="260" selection-end-column="6" />
+            <state vertical-scroll-proportion="-6.7352943" vertical-offset="621" max-vertical-offset="5712">
+              <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -128,41 +122,28 @@
       <file leaf-file-name="remote.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/remote.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.5166667" vertical-offset="504" max-vertical-offset="1309">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="remoteScript.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/remoteScript.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24193548" vertical-offset="2392" max-vertical-offset="4403">
-              <caret line="279" column="0" selection-start-line="279" selection-start-column="0" selection-end-line="279" selection-end-column="0" />
+            <state vertical-scroll-proportion="-4.5384617" vertical-offset="222" max-vertical-offset="1411">
+              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
               <folding>
-                <element signature="e#213#365#0" expanded="false" />
-                <element signature="n#!!block;n#onYouTubeIframeAPIReady#0" expanded="false" />
-                <element signature="n#!!block;n#onPlayerReady#0" expanded="false" />
-                <element signature="n#!!block;n#onPlayerStateChange#0" expanded="false" />
-                <element signature="n#!!block;n#convertTime#0" expanded="false" />
-                <element signature="n#!!block;n#getPlaylistPlayer#0" expanded="false" />
-                <element signature="n#!!block;n#getPlaylist#0" expanded="false" />
-                <element signature="n#!!block;n#displayPlaylist#0" expanded="false" />
-                <element signature="n#!!block;n#getOutput#0" expanded="false" />
-                <element signature="e#10807#11828#0" expanded="false" />
+                <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="analytics.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/analytics.js">
+      <file leaf-file-name="remoteScript.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/remoteScript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state vertical-scroll-proportion="-4.6764708" vertical-offset="2527" max-vertical-offset="5491">
+              <caret line="219" column="30" selection-start-line="219" selection-start-column="30" selection-end-line="219" selection-end-column="30" />
               <folding>
-                <element signature="e#0#49#0" expanded="false" />
+                <element signature="e#213#365#0" expanded="false" />
+                <element signature="n#!!block;n#onYouTubeIframeAPIReady#0" expanded="false" />
+                <element signature="n#!!block;n#convertTime#0" expanded="false" />
+                <element signature="n#!!block;n#getPlaylistPlayer#0" expanded="false" />
+                <element signature="n#!!block;n#getOutput#0" expanded="false" />
+                <element signature="e#11075#12096#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -176,15 +157,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/static/style.css" />
         <option value="$PROJECT_DIR$/templates/analytics.js" />
         <option value="$PROJECT_DIR$/static/analytics.js" />
-        <option value="$PROJECT_DIR$/templates/player.html" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/static/script.js" />
-        <option value="$PROJECT_DIR$/templates/remote.html" />
         <option value="$PROJECT_DIR$/static/remoteScript.js" />
+        <option value="$PROJECT_DIR$/static/script.js" />
+        <option value="$PROJECT_DIR$/static/style.css" />
+        <option value="$PROJECT_DIR$/templates/player.html" />
+        <option value="$PROJECT_DIR$/templates/remote.html" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
       </list>
     </option>
   </component>
@@ -220,6 +201,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -254,7 +236,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -266,7 +247,7 @@
     <property name="full.screen.before.presentation.mode" value="false" />
   </component>
   <component name="RunManager" selected="Python.jk-deploy">
-    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -279,11 +260,46 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="jk-deploy" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="TARGET" value="" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="jk-deploy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="jk-deploy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
@@ -311,73 +327,7 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="tests" factoryName="Nosetests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="jk-deploy" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="jk-deploy" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="jk-deploy" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -391,33 +341,7 @@
       <option name="ADDITIONAL_ARGS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="jk-deploy" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <pass-parent-envs>true</pass-parent-envs>
-      <envs />
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -440,7 +364,7 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+    <configuration default="true" type="tests" factoryName="Doctests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -451,7 +375,64 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="jk-deploy" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="jk-deploy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="jk-deploy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
     <configuration default="false" name="jk-deploy" type="PythonConfigurationType" factoryName="Python" singleton="true">
@@ -496,47 +477,47 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3161876" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3207262" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13918306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13918306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -562,14 +543,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/player.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1326">
-          <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2040" max-vertical-offset="4284">
@@ -591,14 +564,10 @@
           <folding>
             <element signature="e#0#75#0" expanded="true" />
             <element signature="e#1650#2299#0" expanded="false" />
-            <element signature="e#2385#2840#0" expanded="false" />
             <element signature="e#3673#4674#0" expanded="false" />
             <element signature="e#4706#5066#0" expanded="false" />
             <element signature="e#5096#5231#0" expanded="false" />
-            <element signature="e#5292#6485#0" expanded="false" />
             <element signature="e#6936#7305#0" expanded="false" />
-            <element signature="e#7378#7449#0" expanded="false" />
-            <element signature="e#7511#7707#0" expanded="false" />
             <element signature="e#7766#7897#0" expanded="false" />
             <marker date="1479332270235" expanded="true" signature="1086:1230" placeholder="CREATE TABLE..missing_value..." />
             <marker date="1479332270235" expanded="true" signature="1266:1280" placeholder="CREATE TABLE..missing_valueS..." />
@@ -628,7 +597,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1326">
           <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -653,14 +625,10 @@
           <folding>
             <element signature="e#0#75#0" expanded="true" />
             <element signature="e#1650#2299#0" expanded="false" />
-            <element signature="e#2385#2840#0" expanded="false" />
             <element signature="e#3673#4674#0" expanded="false" />
             <element signature="e#4706#5066#0" expanded="false" />
             <element signature="e#5096#5231#0" expanded="false" />
-            <element signature="e#5292#6485#0" expanded="false" />
             <element signature="e#6936#7305#0" expanded="false" />
-            <element signature="e#7378#7449#0" expanded="false" />
-            <element signature="e#7511#7707#0" expanded="false" />
             <element signature="e#7766#7897#0" expanded="false" />
             <marker date="1479332270235" expanded="true" signature="1086:1230" placeholder="CREATE TABLE..missing_value..." />
             <marker date="1479332270235" expanded="true" signature="1266:1280" placeholder="CREATE TABLE..missing_valueS..." />
@@ -690,7 +658,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1326">
           <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -715,14 +686,10 @@
           <folding>
             <element signature="e#0#75#0" expanded="true" />
             <element signature="e#1650#2299#0" expanded="false" />
-            <element signature="e#2385#2840#0" expanded="false" />
             <element signature="e#3673#4674#0" expanded="false" />
             <element signature="e#4706#5066#0" expanded="false" />
             <element signature="e#5096#5231#0" expanded="false" />
-            <element signature="e#5292#6485#0" expanded="false" />
             <element signature="e#6936#7305#0" expanded="false" />
-            <element signature="e#7378#7449#0" expanded="false" />
-            <element signature="e#7511#7707#0" expanded="false" />
             <element signature="e#7766#7897#0" expanded="false" />
             <marker date="1479332270235" expanded="true" signature="1086:1230" placeholder="CREATE TABLE..missing_value..." />
             <marker date="1479332270235" expanded="true" signature="1266:1280" placeholder="CREATE TABLE..missing_valueS..." />
@@ -752,7 +719,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="295" max-vertical-offset="1224">
           <caret line="51" column="62" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="62" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -777,14 +747,10 @@
           <folding>
             <element signature="e#0#75#0" expanded="true" />
             <element signature="e#1650#2299#0" expanded="false" />
-            <element signature="e#2385#2840#0" expanded="false" />
             <element signature="e#3673#4674#0" expanded="false" />
             <element signature="e#4706#5066#0" expanded="false" />
             <element signature="e#5096#5231#0" expanded="false" />
-            <element signature="e#5292#6485#0" expanded="false" />
             <element signature="e#6936#7305#0" expanded="false" />
-            <element signature="e#7378#7449#0" expanded="false" />
-            <element signature="e#7511#7707#0" expanded="false" />
             <element signature="e#7766#7897#0" expanded="false" />
             <marker date="1479332270235" expanded="true" signature="1086:1230" placeholder="CREATE TABLE..missing_value..." />
             <marker date="1479332270235" expanded="true" signature="1266:1280" placeholder="CREATE TABLE..missing_valueS..." />
@@ -814,7 +780,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="601" max-vertical-offset="1224">
           <caret line="51" column="62" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="62" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -832,14 +801,10 @@
           <folding>
             <element signature="e#0#75#0" expanded="true" />
             <element signature="e#1650#2299#0" expanded="false" />
-            <element signature="e#2385#2840#0" expanded="false" />
             <element signature="e#3673#4674#0" expanded="false" />
             <element signature="e#4706#5066#0" expanded="false" />
             <element signature="e#5096#5231#0" expanded="false" />
-            <element signature="e#5292#6485#0" expanded="false" />
             <element signature="e#6936#7305#0" expanded="false" />
-            <element signature="e#7378#7449#0" expanded="false" />
-            <element signature="e#7511#7707#0" expanded="false" />
             <element signature="e#7766#7897#0" expanded="false" />
             <marker date="1479332270235" expanded="true" signature="1086:1230" placeholder="CREATE TABLE..missing_value..." />
             <marker date="1479332270235" expanded="true" signature="1266:1280" placeholder="CREATE TABLE..missing_valueS..." />
@@ -869,7 +834,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="601" max-vertical-offset="1411">
           <caret line="54" column="76" selection-start-line="54" selection-start-column="76" selection-end-line="54" selection-end-column="76" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -887,14 +855,10 @@
           <folding>
             <element signature="e#0#75#0" expanded="true" />
             <element signature="e#1650#2299#0" expanded="false" />
-            <element signature="e#2385#2840#0" expanded="false" />
             <element signature="e#3673#4674#0" expanded="false" />
             <element signature="e#4706#5066#0" expanded="false" />
             <element signature="e#5096#5231#0" expanded="false" />
-            <element signature="e#5292#6485#0" expanded="false" />
             <element signature="e#6936#7305#0" expanded="false" />
-            <element signature="e#7378#7449#0" expanded="false" />
-            <element signature="e#7511#7707#0" expanded="false" />
             <element signature="e#7766#7897#0" expanded="false" />
             <marker date="1479332270235" expanded="true" signature="1086:1230" placeholder="CREATE TABLE..missing_value..." />
             <marker date="1479332270235" expanded="true" signature="1266:1280" placeholder="CREATE TABLE..missing_valueS..." />
@@ -924,7 +888,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1241">
           <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -935,14 +902,10 @@
           <folding>
             <element signature="e#0#75#0" expanded="true" />
             <element signature="e#1650#2299#0" expanded="false" />
-            <element signature="e#2385#2840#0" expanded="false" />
             <element signature="e#3673#4674#0" expanded="false" />
             <element signature="e#4706#5066#0" expanded="false" />
             <element signature="e#5096#5231#0" expanded="false" />
-            <element signature="e#5292#6485#0" expanded="false" />
             <element signature="e#6936#7305#0" expanded="false" />
-            <element signature="e#7378#7449#0" expanded="false" />
-            <element signature="e#7511#7707#0" expanded="false" />
             <element signature="e#7766#7897#0" expanded="false" />
             <marker date="1479332270235" expanded="true" signature="1086:1230" placeholder="CREATE TABLE..missing_value..." />
             <marker date="1479332270235" expanded="true" signature="1266:1280" placeholder="CREATE TABLE..missing_valueS..." />
@@ -965,7 +928,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1241">
           <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -976,14 +942,10 @@
           <folding>
             <element signature="e#0#75#0" expanded="true" />
             <element signature="e#1650#2299#0" expanded="false" />
-            <element signature="e#2385#2840#0" expanded="false" />
             <element signature="e#3673#4674#0" expanded="false" />
             <element signature="e#4706#5066#0" expanded="false" />
             <element signature="e#5096#5231#0" expanded="false" />
-            <element signature="e#5292#6485#0" expanded="false" />
             <element signature="e#6936#7305#0" expanded="false" />
-            <element signature="e#7378#7449#0" expanded="false" />
-            <element signature="e#7511#7707#0" expanded="false" />
             <element signature="e#7766#7897#0" expanded="false" />
             <marker date="1479332270235" expanded="true" signature="1086:1230" placeholder="CREATE TABLE..missing_value..." />
             <marker date="1479332270235" expanded="true" signature="1266:1280" placeholder="CREATE TABLE..missing_valueS..." />
@@ -1006,7 +968,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1241">
           <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1017,14 +982,10 @@
           <folding>
             <element signature="e#0#75#0" expanded="true" />
             <element signature="e#1650#2299#0" expanded="false" />
-            <element signature="e#2385#2840#0" expanded="false" />
             <element signature="e#3673#4674#0" expanded="false" />
             <element signature="e#4706#5066#0" expanded="false" />
             <element signature="e#5096#5231#0" expanded="false" />
-            <element signature="e#5292#6485#0" expanded="false" />
             <element signature="e#6936#7305#0" expanded="false" />
-            <element signature="e#7378#7449#0" expanded="false" />
-            <element signature="e#7511#7707#0" expanded="false" />
             <element signature="e#7766#7897#0" expanded="false" />
             <marker date="1479332270235" expanded="true" signature="1086:1230" placeholder="CREATE TABLE..missing_value..." />
             <marker date="1479332270235" expanded="true" signature="1266:1280" placeholder="CREATE TABLE..missing_valueS..." />
@@ -1047,7 +1008,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1058,14 +1022,10 @@
           <folding>
             <element signature="e#0#75#0" expanded="true" />
             <element signature="e#1650#2299#0" expanded="false" />
-            <element signature="e#2385#2840#0" expanded="false" />
             <element signature="e#3673#4674#0" expanded="false" />
             <element signature="e#4706#5066#0" expanded="false" />
             <element signature="e#5096#5231#0" expanded="false" />
-            <element signature="e#5292#6485#0" expanded="false" />
             <element signature="e#6936#7305#0" expanded="false" />
-            <element signature="e#7378#7449#0" expanded="false" />
-            <element signature="e#7511#7707#0" expanded="false" />
             <element signature="e#7766#7897#0" expanded="false" />
             <marker date="1479332270235" expanded="true" signature="1086:1230" placeholder="CREATE TABLE..missing_value..." />
             <marker date="1479332270235" expanded="true" signature="1266:1280" placeholder="CREATE TABLE..missing_valueS..." />
@@ -1109,7 +1069,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1173">
           <caret line="12" column="48" selection-start-line="3" selection-start-column="0" selection-end-line="12" selection-end-column="48" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1120,14 +1083,10 @@
           <folding>
             <element signature="e#0#75#0" expanded="true" />
             <element signature="e#1650#2299#0" expanded="false" />
-            <element signature="e#2385#2840#0" expanded="false" />
             <element signature="e#3673#4674#0" expanded="false" />
             <element signature="e#4706#5066#0" expanded="false" />
             <element signature="e#5096#5231#0" expanded="false" />
-            <element signature="e#5292#6485#0" expanded="false" />
             <element signature="e#6936#7305#0" expanded="false" />
-            <element signature="e#7378#7449#0" expanded="false" />
-            <element signature="e#7511#7707#0" expanded="false" />
             <element signature="e#7766#7897#0" expanded="false" />
             <marker date="1479332270235" expanded="true" signature="1086:1230" placeholder="CREATE TABLE..missing_value..." />
             <marker date="1479332270235" expanded="true" signature="1266:1280" placeholder="CREATE TABLE..missing_valueS..." />
@@ -1153,19 +1112,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4557" max-vertical-offset="5185">
-          <caret line="260" column="6" selection-start-line="260" selection-start-column="1" selection-end-line="260" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/analytics.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="628">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1173,43 +1123,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/visibleIcon.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="406">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/remoteScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.6764708" vertical-offset="2527" max-vertical-offset="5491">
+          <caret line="219" column="30" selection-start-line="219" selection-start-column="30" selection-end-line="219" selection-end-column="30" />
           <folding>
-            <element signature="e#0#49#0" expanded="false" />
+            <element signature="e#213#365#0" expanded="false" />
+            <element signature="n#!!block;n#onYouTubeIframeAPIReady#0" expanded="false" />
+            <element signature="n#!!block;n#convertTime#0" expanded="false" />
+            <element signature="n#!!block;n#getPlaylistPlayer#0" expanded="false" />
+            <element signature="n#!!block;n#getOutput#0" expanded="false" />
+            <element signature="e#11075#12096#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846" vertical-offset="918" max-vertical-offset="1700">
-          <caret line="68" column="62" selection-start-line="68" selection-start-column="62" selection-end-line="68" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/player.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5" vertical-offset="153" max-vertical-offset="1479">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1938">
-          <caret line="29" column="66" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
+        <state vertical-scroll-proportion="-8.735294" vertical-offset="808" max-vertical-offset="2771">
+          <caret line="78" column="16" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
           <folding>
             <element signature="e#0#75#0" expanded="true" />
             <element signature="e#1650#2299#0" expanded="false" />
-            <element signature="e#2385#2840#0" expanded="false" />
             <element signature="e#3673#4674#0" expanded="false" />
             <element signature="e#4706#5066#0" expanded="false" />
             <element signature="e#5096#5231#0" expanded="false" />
-            <element signature="e#5292#6485#0" expanded="false" />
             <element signature="e#6936#7305#0" expanded="false" />
-            <element signature="e#7378#7449#0" expanded="false" />
-            <element signature="e#7511#7707#0" expanded="false" />
             <element signature="e#7766#7897#0" expanded="false" />
             <marker date="1479332270235" expanded="true" signature="1086:1230" placeholder="CREATE TABLE..missing_value..." />
             <marker date="1479332270235" expanded="true" signature="1266:1280" placeholder="CREATE TABLE..missing_valueS..." />
@@ -1230,44 +1179,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6470587" vertical-offset="2290" max-vertical-offset="5984">
-          <caret line="296" column="21" selection-start-line="296" selection-start-column="21" selection-end-line="296" selection-end-column="21" />
+        <state vertical-scroll-proportion="-6.3235292" vertical-offset="2318" max-vertical-offset="6987">
+          <caret line="222" column="4" selection-start-line="222" selection-start-column="4" selection-end-line="222" selection-end-column="4" />
           <folding>
             <element signature="n#!!block;n#search#0" expanded="false" />
             <element signature="n#!!block;n#convertTime#0" expanded="false" />
             <element signature="n#!!block;n#getPlaylistPlayer#0" expanded="false" />
-            <element signature="n#!!block;n#getPlaylist#0" expanded="false" />
-            <element signature="n#!!block;n#displayPlaylist#0" expanded="false" />
             <element signature="n#!!block;n#getOutput#0" expanded="false" />
-            <element signature="n#!!block;n#generateControl#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.7352943" vertical-offset="621" max-vertical-offset="5712">
+          <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/player.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4230769" vertical-offset="303" max-vertical-offset="1598">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="160" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/remote.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5166667" vertical-offset="504" max-vertical-offset="1309">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="-4.5384617" vertical-offset="222" max-vertical-offset="1411">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/remoteScript.js">
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24193548" vertical-offset="2392" max-vertical-offset="4403">
-          <caret line="279" column="0" selection-start-line="279" selection-start-column="0" selection-end-line="279" selection-end-column="0" />
-          <folding>
-            <element signature="e#213#365#0" expanded="false" />
-            <element signature="n#!!block;n#onYouTubeIframeAPIReady#0" expanded="false" />
-            <element signature="n#!!block;n#onPlayerReady#0" expanded="false" />
-            <element signature="n#!!block;n#onPlayerStateChange#0" expanded="false" />
-            <element signature="n#!!block;n#convertTime#0" expanded="false" />
-            <element signature="n#!!block;n#getPlaylistPlayer#0" expanded="false" />
-            <element signature="n#!!block;n#getPlaylist#0" expanded="false" />
-            <element signature="n#!!block;n#displayPlaylist#0" expanded="false" />
-            <element signature="n#!!block;n#getOutput#0" expanded="false" />
-            <element signature="e#10807#11828#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.52307695" vertical-offset="816" max-vertical-offset="1768">
+          <caret line="60" column="105" selection-start-line="60" selection-start-column="105" selection-end-line="60" selection-end-column="105" />
+          <folding />
         </state>
       </provider>
     </entry>

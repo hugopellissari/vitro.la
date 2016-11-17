@@ -47,6 +47,15 @@ h3{
     font-weight:300;
 }
 
+h4{
+    color:#ecf0f1;
+    font-weight:300;
+}
+
+.btn:focus,.btn:active {
+   outline: none !important;
+}
+
 .input-lg{
     border:1px solid #bdc3c7
 }
@@ -66,7 +75,7 @@ h3{
 
 .control{
     font-size:38px;
-    cursor:default;
+    cursor: hand;
 }
 
 
@@ -225,12 +234,27 @@ h3{
 }
 
 #playbackControl{
-  width: 100%;
-  text-align: center;
+    width: 100%;
+    text-align: center;
+
 }
 
 #playback-wrapper{
-  display: inline-block;
+    display: inline-block;
+}
+
+#showPlayer{
+    background: transparent;
+    border-color: transparent;
+    position: absolute;
+    right: 10px;
+    margin-top: 4px;
+    margin-right: 2px;
+}
+
+#visibleIcon{
+    height: 15px;
+    width: auto;
 }
 
 
@@ -297,4 +321,11 @@ h3{
 .indexPanel{
     background-color:#edeff1;
 
+}
+
+#loadingImg{
+    display: none;
+    position: absolute;
+    left: 48%;
+    top: 12%;
 }

@@ -220,6 +220,8 @@ function displayPlaylist(item,i){
     var videoId = item.videoid;
     var dbid = item.id;
 
+    $('#instructions').hide();
+
     if (i == cursor) {
         var liTag = '<li id="playlistItem" class = "list-group-item active" video-id= ' + videoId + ' dbId=' + dbid +' index=' +i+'>';
     }else{
@@ -277,10 +279,12 @@ function generateControl(){
          output =     '<i id="skipPrevious" class = "material-icons control">skip_previous</i>' +
                       '<i id="play" class = "material-icons control" >play_arrow</i>' +
                       '<i id="skipNext" class = "material-icons control">skip_next</i>'
+
     }else{
          output =      '<i id="skipPrevious" class = "material-icons control">skip_previous</i>' +
                       '<i id="pause" class = "material-icons control" >pause</i>' +
                       '<i id="skipNext" class = "material-icons control">skip_next</i>'
+
     }
     $('#playback-wrapper').html('');
     $('#playback-wrapper').append(output);

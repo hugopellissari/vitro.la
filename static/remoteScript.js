@@ -217,6 +217,8 @@ function displayPlaylist(item,i){
     var videoId = item.videoid;
     var dbid = item.id;
 
+    $('#instructions').hide();
+
     if (i == cursor) {
         var liTag = '<li class = "list-group-item active" video-id= ' + videoId + ' dbId=' + dbid +'index='+i+'>';
     }else{
@@ -345,11 +347,19 @@ $(document).ready(function(){
     $('#playbackControl').on("click",'#skipPrevious',function(){
         skipVideo(0);
         getPlaylist();
+        $("#loadingImg").show();
+        setTimeout(function(){
+            $("#loadingImg").hide();
+        },1500);
     });
 
     $('#playbackControl').on("click",'#skipNext',function(){
         skipVideo(1);
         getPlaylist();
+        $("#loadingImg").show();
+        setTimeout(function(){
+            $("#loadingImg").hide();
+        },1500);
     });
 
     $('#playbackControl').on("click",'#play',function(){

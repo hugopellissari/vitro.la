@@ -18,14 +18,14 @@
 
 	<body>
 
-	    <title>Vitrola - Create a playlist, let everybody add</title>
-	    <meta name=”description” content=”Description of page” />
+	    <title>Vitrola</title>
+	    <meta name=”description” content=”Create a jukebox and build a playlist. Use any device to add more songs. Absolutly free, no registration required.” />
 
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Jukebox</a>
-                    <h4 id="jukename" name="jukename">{{ jukename }}</h4>
+                     <h4>This jukebox is called: </h4>
+                     <h4 id="jukename" name="jukename">{{ jukename }}</h4>
                 </div>
              </div>
         </nav>
@@ -43,19 +43,26 @@
                      <div class="progress">
                          <div class="progress-bar" style="width: 0%;"></div>
                      </div>
-                     <button id="showPlayer" data-target="#playerCollapse" type="button" class="btn btn-primary" data-toggle="collapse"></button>
+
+                     <button id="showPlayer" data-target="#playerCollapse" type="button" class="btn btn-primary" data-toggle="collapse"><img id="visibleIcon" src="static/visibleIcon.svg"></button>
                      <div id="playback-wrapper"></div>
 
                  </div>
 
                   <div id="containerPlaylist" class = "panel panel-default playerPanel">
-                       <div class="panel-heading playerPanel">Playlist
-                       <form id="autoSwitch">Auto
-                       <input type="checkbox" name="autoSwitch" checked>
-                       </form>
-                       </div>
-                       <ul id="playlist" class="list-group">
-                       </ul>
+                        <div class="panel-heading playerPanel">Playlist
+                        <form id="autoSwitch">Auto
+                        <input type="checkbox" name="autoSwitch" checked>
+                        </form>
+                        </div>
+                        <div class="panel-body" id="instructions">
+                           <p style="text-align: center">
+                               <span style="font-weight: bold">You don't have any songs yet.</span> </br>
+                               Use the search bar to add some tunes.
+                               You can also connect other devices to this jukebox and add music from there.
+                           </p>
+                        </div>
+                        <ul id="playlist" class="list-group"></ul>
                    </div>
             </div>
 
