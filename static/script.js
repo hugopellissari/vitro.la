@@ -367,18 +367,18 @@ $(document).ready(function(){
         getPlaylist();
     });
 
-    $('#playlist').on("click",".list-group-item",function(e){
-        if(e.target !== this) {
-            return;
-        }else{
-            index = $(this).attr("index");
-            videoId = $(this).attr("video-id");
-            player.loadVideoById(videoId);
-            cursor = index;
-            updateCursor();
-            update();
-        }
-    });
+ //   $('#playlist').on("click",".list-group-item",function(e){
+ //       if(e.target !== this) {
+ //           return;
+ //       }else{
+  //          index = $(this).attr("index");
+  //          videoId = $(this).attr("video-id");
+  //          player.loadVideoById(videoId);
+//            cursor = index;
+//            updateCursor();
+//            update();
+//        }
+//    });
 
 
 
