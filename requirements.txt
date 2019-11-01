@@ -1,6 +1,6 @@
 beautifulsoup4==4.4.1
 click==6.6
-Flask==0.11.1
+Flask==1.0
 Flask-SSE==0.2.1
 Flask-WTF==0.13.1
 googlemaps==2.4.4
